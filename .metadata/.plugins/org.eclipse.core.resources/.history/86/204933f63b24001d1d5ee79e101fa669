@@ -1,0 +1,13 @@
+package ch4;
+
+public class Test_02 {
+
+	public static void main(String[] args) {
+		int a = 20, B = 10548
+		int c = (a+b)/2;
+		
+		System.out.println(c);
+
+	}
+
+}

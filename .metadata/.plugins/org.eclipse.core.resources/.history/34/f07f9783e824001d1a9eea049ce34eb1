@@ -1,0 +1,12 @@
+package This_is;
+
+public class p59_OperationsPromotion_EX {
+
+	public static void main(String[] args) {
+		byte byteValue1 = 10;
+		byte byteValue2 = 20;
+//		byte byteValue3 = byteValue1 + byteValue2;  연산이 int로 이루어지기에 컴파일 에러.
+		int intValue1 = byteValue1 + byteValue2;
+		System.out.println(intValue1);
+	}
+}

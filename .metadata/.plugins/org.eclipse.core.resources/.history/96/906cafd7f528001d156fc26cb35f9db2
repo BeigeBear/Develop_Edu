@@ -1,0 +1,27 @@
+package ch7;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		Student s2 = new Student();
+		
+		s1.name = "±èÅÂÈñ";
+		s1.kor = 90;
+		s1.eng = 95;
+		s1.math = 100;
+		s1.sum = s1.kor + s1.eng + s1.math;
+		s1.avg = (float)s1.sum / 3;
+		
+		System.out.println("°´Ã¼ s1ÀÇ Á¤º¸");
+		System.out.println("ÀÌ¸§ : "+ s1.name);
+		System.out.println("±¹¾î : "+ s1.name);
+		System.out.println("¿µ¾î : "+ s1.name);
+		System.out.println("¼öÇĞ : "+ s1.name);
+		System.out.println("ÃÑÁ¡ : "+ s1.name);
+		System.out.println("Æò±Õ : "+ s1.name);
+		
+
+	}
+
+}

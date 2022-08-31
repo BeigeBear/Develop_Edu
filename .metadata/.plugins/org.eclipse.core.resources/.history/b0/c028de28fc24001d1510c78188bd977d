@@ -1,0 +1,14 @@
+package This_is;
+
+public class p78_ArithmeticOperator_EX {
+
+	public static void main(String[] args) {
+		int v1 = 5;
+		int v2 = 2;
+		
+		int result1 = v1 + v2;
+		System.out.println("result1= "+result1);
+
+	}
+
+}

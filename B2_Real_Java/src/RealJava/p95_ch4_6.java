@@ -1,0 +1,19 @@
+package RealJava;
+
+// 루프 반복 연산의 합
+public class p95_ch4_6 {
+
+	public static void main(String[] args) {
+		int i, sum=0;
+		System.out.println("1~100까지의 합");
+		for(i=1;i<=100;i++) {
+			sum+=i;
+		}
+		System.out.println("sum="+sum);
+	}
+
+}
+
+//	< 출력 값 >
+//	1~100까지의 합
+//	sum=5050

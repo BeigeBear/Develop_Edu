@@ -1,0 +1,14 @@
+package Quiz;
+
+public class Quiz_6_2 {
+
+	public static void main(String[] args) {
+		int[] arr = {5, 4, 3, 2, 1 };
+		int i;
+		for(i = 0; i <5; i++) {
+			System.out.println(arr[i] + "\t");
+		}
+
+	}
+
+}

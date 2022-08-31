@@ -1,0 +1,12 @@
+package This_is;
+
+public class P74_bit {
+	
+	public static void main(String[] args) {
+		byte v1 = 10;
+		int v2 = ~v1;
+		
+		System.out.println(v2);
+	
+}
+}

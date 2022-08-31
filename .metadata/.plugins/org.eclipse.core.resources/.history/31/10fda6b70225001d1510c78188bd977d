@@ -1,0 +1,16 @@
+package This_is;
+
+public class p85_InputDataCheckNaN_EX {
+
+	public static void main(String[] args) {
+		String userInput = "NaN";
+		double val = Double.value0f( userInput );
+		
+		double currerntBalance = 10000.0;
+		
+		currentBalance += val;
+		System.out.println(currentBalance);
+
+	}
+
+}

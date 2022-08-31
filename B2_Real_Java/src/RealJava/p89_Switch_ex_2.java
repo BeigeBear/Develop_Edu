@@ -1,0 +1,19 @@
+package RealJava;
+
+public class p89_Switch_ex_2 {
+
+	public static void main(String[] args) {
+		String month = "1¿ù";
+		int monNum = 0;
+		
+		switch ( month ) {
+		case "1¿ù": {
+			¤Ñ¤Á¤Ì
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " +  month );
+		}
+
+	}
+
+}

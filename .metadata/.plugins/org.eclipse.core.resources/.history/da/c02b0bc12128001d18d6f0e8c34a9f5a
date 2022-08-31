@@ -1,0 +1,10 @@
+package ThisIsJava;
+
+public class p125_While_Sum_From_To_100_ex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

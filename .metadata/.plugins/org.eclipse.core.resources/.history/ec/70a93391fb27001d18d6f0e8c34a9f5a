@@ -1,0 +1,17 @@
+package RealJava;
+
+public class p101_ch4_12 {
+
+	public static void main(String[] args) {
+		int i, j; 
+		//for문의 변수설정은 밖에서.
+		
+		for(i=0;i<4;i++) {
+			for(j=1;j<=i+1;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+	}
+}

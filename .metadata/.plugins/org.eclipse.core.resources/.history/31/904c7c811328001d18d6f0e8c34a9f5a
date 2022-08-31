@@ -1,0 +1,10 @@
+package ThisIsJava;
+
+public class p124_For_Multiplication_Table_ex {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
