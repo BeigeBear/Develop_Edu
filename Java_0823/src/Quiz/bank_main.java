@@ -18,7 +18,6 @@ public class bank_main {
 			System.out.println("입금할 금액을 입력하세요.");
 			int pm = sc.nextInt();
 			lim.PutMoney(pm);
-			lim.PrintBalance();
 			
 		} else if(job.equals("2")) {
 			System.out.println("출금할 금액을 입력하세요.");
