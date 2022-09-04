@@ -7,20 +7,20 @@ public class bank_main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		bank lim = new bank();
+		
 		String job;
-
-		System.out.println("¿øÇÏ´Â ¾÷¹« ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
-		System.out.println("[ 1.ÀÔ±İ ] [ 2.Ãâ±İ ] [ 3.ÀÜ¾×Á¶È¸ ] [ 4.Á¤º¸È®ÀÎ ] ");
+		System.out.println("ì›í•˜ëŠ” ì—…ë¬´ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
+		System.out.println("[ 1.ì…ê¸ˆ ] [ 2.ì¶œê¸ˆ ] [ 3.ì”ì•¡ì¡°íšŒ ] [ 4.ì •ë³´í™•ì¸ ] ");
 		
 		job = sc.nextLine();
-		
+
 		if(job.equals("1")) {
-			System.out.println("ÀÔ±İÇÒ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("ì…ê¸ˆí•  ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”.");
 			int pm = sc.nextInt();
 			lim.PutMoney(pm);
 			
 		} else if(job.equals("2")) {
-			System.out.println("Ãâ±İÇÒ ±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("ì¶œê¸ˆí•  ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”.");
 			int gm = sc.nextInt();
 			lim.GetMoney(gm);
 			lim.PrintBalance();
@@ -30,8 +30,9 @@ public class bank_main {
 			
 		} else if(job.equals("4")) {
 			lim.PrintAllInfo();
+			
 		} else {
-			System.out.println("Á¤È®ÇÏÁö ¾Ê½À´Ï´Ù. ´Ù½Ã ½ÃµµÇØÁÖ¼¼¿ä.");
+			System.out.println("ì •í™•í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. í”„ë¡œê·¸ë¨ì´ ì¢…ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 	}
 }
