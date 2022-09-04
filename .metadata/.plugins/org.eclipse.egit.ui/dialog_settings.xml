@@ -9,4 +9,10 @@
 		<item value="https://github.com/BeigeBear/Java-Class.git"/>
 		<item value="https://github.com/BeigeBear/Java_Class.git"/>
 	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="sortItemState" value="false"/>
+	</section>
 </section>
