@@ -10,4 +10,12 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.function.DoubleToLongFunction"/>
+    <fullyQualifiedTypeName name="java.util.function.DoubleToIntFunction"/>
+    <fullyQualifiedTypeName name="Quiz.Game"/>
+    <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMUtils"/>
+    <fullyQualifiedTypeName name="ex.cellPhone"/>
+    <fullyQualifiedTypeName name="ex.dmbCellPhone_ex"/>
+    <fullyQualifiedTypeName name="ex.dmbCellPhone"/>
+    <fullyQualifiedTypeName name="Quiz.Calc_Plus"/>
+    <fullyQualifiedTypeName name="Quiz.car_SportsCar"/>
 </qualifiedTypeNameHistroy>
