@@ -1,4 +1,4 @@
-package Quiz;
+package Car_Menu;
 
 //	데이터 영역
 public class car {
@@ -40,6 +40,17 @@ public class car {
 			return;
 		} else {
 			this.maxSpeed = speed;
+		}
+	}
+	
+	protected void setCar(int Num, String Model, int Speed) {
+		this.Num = Num;
+		this.model = Model;
+		if(Speed < 0) {
+			this.maxSpeed = 0;
+			return;
+		} else {
+			this.maxSpeed = Speed;
 		}
 	}
 	

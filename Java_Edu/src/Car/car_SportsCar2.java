@@ -1,13 +1,14 @@
-package Quiz;
+package Car;
 
-import Car.car;
-
-public class car_SportsCar extends car {
+public class car_SportsCar2 extends car {
+	private int sportsNum = 5959;
+	private String sportsModel = "Audi GT";
+	private int sportsMaxSpeed = 300;
 	private float extraFuel = 0;
 	
 	
 	protected void setExtraFuel(float extraFuel) {
-		if(extraFuel <= 10) {	   // 0이하로 입력
+		if(extraFuel < 0) {	   // 0이하로 입력
 			System.out.println("최소한 10이상의 연료가 필요합니다.");
 			System.out.println("현재 남은 연료는 "+this.extraFuel+"L 입니다.\n");
 			return;
@@ -27,13 +28,8 @@ public class car_SportsCar extends car {
 			System.out.println("연료가 부족합니다. \n연료를 충전해주세요.\n");
 			return;
 		} else { // 연료 충분, 부스터 사용, 연료 10L 소모.
-			this.extraFuel = this.extraFuel - 10.0f;
-			if(this.extraFuel < 10) {
-				System.out.println("부스터 사용, 현재 남은 연료는 "+this.extraFuel+"L 입니다.");
-				System.out.println("연료를 충전해주세요.\n");
-			} else {
-				System.out.println("부스터 사용, 현재 남은 연료는 "+this.extraFuel+"L 입니다.\n");
-			}
+		this.extraFuel = this.extraFuel-10;
+		System.out.println("부스터 사용, 현재 남은 연료는 "+this.extraFuel+"L 입니다.\n");
 		}
 	}	
 }

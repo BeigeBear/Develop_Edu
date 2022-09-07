@@ -7,8 +7,6 @@
     <fullyQualifiedTypeName name="java.sql.SQLOutput"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.function.DoubleToLongFunction"/>
     <fullyQualifiedTypeName name="java.util.function.DoubleToIntFunction"/>
     <fullyQualifiedTypeName name="Quiz.Game"/>
@@ -18,4 +16,9 @@
     <fullyQualifiedTypeName name="ex.dmbCellPhone"/>
     <fullyQualifiedTypeName name="Quiz.Calc_Plus"/>
     <fullyQualifiedTypeName name="Quiz.car_SportsCar"/>
+    <fullyQualifiedTypeName name="Quiz.car_Truck"/>
+    <fullyQualifiedTypeName name="Book.book"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
