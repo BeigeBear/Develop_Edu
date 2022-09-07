@@ -1,10 +1,35 @@
 package Car_Menu;
 
-public class car_SportsCar2 extends car {
+public class car_Sports extends car {
 	private int sportsNum = 5959;
 	private String sportsModel = "Audi GT";
 	private int sportsMaxSpeed = 300;
-	private float extraFuel = 0;
+	private float sportsFuel = 0;
+	
+	protected void carInfo() {
+		System.out.println("────────────────────────────────────────────────────");
+		System.out.println(" 차량번호 : " + sportsNum);
+		System.out.println(" 모델명 : " + sportsModel);
+		System.out.println(" 최고속도 : " + sportsMaxSpeed + "km/h");
+		System.out.println(" 연료용량 : " + sportsFuel + "L");
+		System.out.println("────────────────────────────────────────────────────");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	protected void setExtraFuel(float extraFuel) {

@@ -1,65 +1,51 @@
 package Car_Menu;
 
-//	데이터 영역
 public class car {
-	private int Num; // 필드값은 접근 제한.
-	private String model;
-	private int maxSpeed;
+//	데이터 영역
+	private int carNum = 7022;
+	private String carModel = "the New Pride";
+	private int carMaxSpeed = 150;
+	
 
 	
 	
+
 //	기능 영역
 	// Num Getter
-	protected int getCarNum() {
-		return Num;
+	protected int get_carNum() {
+		return carNum;
+	}
+	// Model Getter
+	protected String get_carModel() {
+		return carModel;
+	}
+	// Speed Getter
+	protected int get_carMaxSpeed() {
+		return carMaxSpeed;
 	}
 	// Num Setter
-	protected void setCarNum(int Num) {
-		this.Num = Num;
-	}
-	
-	
-	// Model Getter
-	protected String getCarModel() {
-		return model;
+	protected void set_carNum(int num) {
+		this.carNum = num;
 	}
 	// Model Setter
-	protected void setCarModel(String model) {
-		this.model = model;
-	}
-	
-	
-	// Speed Getter
-	protected int getCarmaxSpeed() {
-		return maxSpeed;
+	protected void set_carModel(String model) {
+		this.carModel = model;
 	}
 	// Speed Setter
-	protected void setCarmaxSpeed(int speed) {
+	protected void set_carMaxSpeed(int speed) {
 		if(speed < 0) {
-			this.maxSpeed = 0;
+			this.carMaxSpeed = 0;
 			return;
 		} else {
-			this.maxSpeed = speed;
+			this.carMaxSpeed = speed;
 		}
 	}
-	
-	protected void setCar(int Num, String Model, int Speed) {
-		this.Num = Num;
-		this.model = Model;
-		if(Speed < 0) {
-			this.maxSpeed = 0;
-			return;
-		} else {
-			this.maxSpeed = Speed;
-		}
-	}
-	
-	
-	
-//	출력 영역
-	protected void put_Car() {
-		System.out.println("이 차의 번호는 "+Num);
-		System.out.println("이 차의 모델명은 "+model);
-		System.out.println("이 차의 최고 속력은 "+maxSpeed+"km/h");
+	// 전체 정보 조회
+	protected void carInfo() {
+		System.out.println("────────────────────────────────────────────────────");
+		System.out.println(" 차량번호 : " + carNum);
+		System.out.println(" 모델명 : " + carModel);
+		System.out.println(" 최고속도 : " + carMaxSpeed + "km/h");
+		System.out.println("────────────────────────────────────────────────────");
 	}
 }
