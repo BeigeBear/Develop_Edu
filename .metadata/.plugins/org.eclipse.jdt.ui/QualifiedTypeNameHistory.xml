@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMCryptoBinary"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.sql.SQLOutput"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
@@ -18,7 +17,6 @@
     <fullyQualifiedTypeName name="Quiz.car_Truck"/>
     <fullyQualifiedTypeName name="Book.book"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="javax.sql.rowset.serial.SQLOutputImpl"/>
     <fullyQualifiedTypeName name="java.awt.Menu"/>
     <fullyQualifiedTypeName name="Car_Menu.car"/>
@@ -28,4 +26,11 @@
     <fullyQualifiedTypeName name="Car_Menu.car_SUV"/>
     <fullyQualifiedTypeName name="Car_Menu.car_Truck"/>
     <fullyQualifiedTypeName name="Car_Menu.car_Menu"/>
+    <fullyQualifiedTypeName name="javax.swing.text.DefaultCaret"/>
+    <fullyQualifiedTypeName name="javax.swing.SwingUtilities"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="Car_Array.car"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="Car_Array.car_SportsCar"/>
 </qualifiedTypeNameHistroy>

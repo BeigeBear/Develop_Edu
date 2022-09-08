@@ -58,8 +58,8 @@ public class car {
 	
 //	출력 영역
 	protected void put_Car() {
-		System.out.println("이 차의 번호는 "+Num);
-		System.out.println("이 차의 모델명은 "+model);
-		System.out.println("이 차의 최고 속력은 "+maxSpeed+"km/h");
+		System.out.println("번호 : "+Num);
+		System.out.println("모델명 : "+model);
+		System.out.println("최고 속력 : "+maxSpeed+"km/h\n");
 	}
 }
