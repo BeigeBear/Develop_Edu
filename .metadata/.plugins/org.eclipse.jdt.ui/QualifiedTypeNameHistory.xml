@@ -2,9 +2,7 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMCryptoBinary"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
-    <fullyQualifiedTypeName name="java.sql.SQLOutput"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
-    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="java.util.function.DoubleToLongFunction"/>
     <fullyQualifiedTypeName name="java.util.function.DoubleToIntFunction"/>
     <fullyQualifiedTypeName name="Quiz.Game"/>
@@ -29,8 +27,22 @@
     <fullyQualifiedTypeName name="javax.swing.text.DefaultCaret"/>
     <fullyQualifiedTypeName name="javax.swing.SwingUtilities"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="Car_Array.car"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="Car_Array.car_SportsCar"/>
+    <fullyQualifiedTypeName name="menuTest.mainPlay"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.sql.SQLOutput"/>
+    <fullyQualifiedTypeName name="CarArrayListMethod.carArrayListPlay"/>
+    <fullyQualifiedTypeName name="menuTest.k5_Tire"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="menuTest.Tire"/>
+    <fullyQualifiedTypeName name="CarArrayListMethodPolymo.car"/>
+    <fullyQualifiedTypeName name="CarArrayListMethodPolymo.car_SportsCar"/>
+    <fullyQualifiedTypeName name="CVS.Product_DE"/>
+    <fullyQualifiedTypeName name="java.lang.Float"/>
+    <fullyQualifiedTypeName name="CVS.Product"/>
+    <fullyQualifiedTypeName name="CVS.Coffee"/>
+    <fullyQualifiedTypeName name="CVS.Ramen"/>
+    <fullyQualifiedTypeName name="CVS.Snack"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
 </qualifiedTypeNameHistroy>

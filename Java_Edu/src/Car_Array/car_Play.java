@@ -112,6 +112,8 @@ public class car_Play {
 							System.out.println(cameo[i].getCarNum());
 							System.out.println(cameo[i].getCarmaxSpeed());
 							break;
+							
+						
 						}
 						if(!cameo[i].getCarModel().equals(tmp4_name)) {
 							System.out.println("일치하지 않습니다.\n");
