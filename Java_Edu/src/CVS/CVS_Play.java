@@ -230,32 +230,38 @@ public class CVS_Play {
 			case 1: {
 				System.out.println("검색할 상품명을 입력하세요.");
 				String pro_Name = sc.next();
+				int count = 0;
 	
-				for(int i=0; i<=CVS.size(); i++) {
+				for(int i=0; i<CVS.size(); i++) {
 					if(CVS.get(i).getProductName().equals(pro_Name)) {
-						System.out.println("◆ 해당 상품명과 일치하는 상품 정보 ◆");
-						System.out.print("이름 : " + CVS.get(i).getProductName());
-						System.out.println("\t가격 : " + CVS.get(i).getProductPrice()+" 원");
-						if(CVS.get(i) instanceof Coffee) {
-							Coffee print = (Coffee)CVS.get(i);
-							System.out.println("카페인 함유량 : " + print.getCoffeeCaffeine() + "mg");
-						} 
-						if(CVS.get(i) instanceof Ramen) {
-							Ramen print = (Ramen)CVS.get(i);
-							System.out.println("염분 함유량 : " + print.getRamenSalt() + "mg");
-						}
-						if(CVS.get(i) instanceof Snack) {
-							Snack print = (Snack)CVS.get(i);
-							System.out.println("칼로리 : " + print.getSnackKcal() + " Kcal");
-						}
-						System.out.println("고유번호 : " + CVS.get(i).getProductNum()+"\n");
+						count = i;
+						System.out.println(count+" 성공");
+						break;
 					}
-				
-//					if(!(CVS.get(i).getProductName().equals(pro_Name))) {
-//						System.out.println("오류");
-//					} continue;
+					if(i == (CVS.size()-1)) {
+						System.out.println("오류");
+						break;
+					} 
 				}
-			}
+				System.out.println("◆ 해당 상품명과 일치하는 상품 정보 ◆");
+				System.out.print("이름 : " + CVS.get(count).getProductName());
+				System.out.println("\t가격 : " + CVS.get(count).getProductPrice()+" 원");
+				if(CVS.get(count) instanceof Coffee) {
+					Coffee print = (Coffee)CVS.get(count);
+					System.out.println("카페인 함유량 : " + print.getCoffeeCaffeine() + "mg");
+				} 
+				if(CVS.get(count) instanceof Ramen) {
+					Ramen print = (Ramen)CVS.get(count);
+					System.out.println("염분 함유량 : " + print.getRamenSalt() + "mg");
+				}
+				if(CVS.get(count) instanceof Snack) {
+					Snack print = (Snack)CVS.get(count);
+					System.out.println("칼로리 : " + print.getSnackKcal() + " Kcal");
+				}
+				System.out.println("고유번호 : " + CVS.get(count).getProductNum()+"\n");
+				
+					
+				} break;
 		
 			
 			
