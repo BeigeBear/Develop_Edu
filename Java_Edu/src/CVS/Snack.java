@@ -18,7 +18,7 @@ public class Snack extends Product {
 	
 	protected void putSnack() {
 		super.putProduct();
-		System.out.println("제품 칼로리 : "+p_Kcal+" kcal");
+		System.out.println("칼로리 : "+p_Kcal+" kcal");
 	}	
 	
 }

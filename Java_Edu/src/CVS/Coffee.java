@@ -18,7 +18,7 @@ public class Coffee extends Product {
 	
 	protected void putCoffee() {
 		super.putProduct();
-		System.out.println("카페인 함유량 : "+p_Caffeine+" mg");
+		System.out.println("카페인함유량 : "+p_Caffeine+" mg");
 	}
 
 	

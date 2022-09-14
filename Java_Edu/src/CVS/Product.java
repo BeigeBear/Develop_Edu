@@ -45,10 +45,8 @@ public class Product {
 
 //	출력 영역
 	protected void putProduct() {
-		System.out.println("제품 명 : "+p_Name);
-		System.out.println("제품 가격 : "+p_Price+"원");
-		System.out.println("제품 일련번호 : "+p_Num);
+		System.out.println("상품명 : "+p_Name);
+		System.out.println("가격 : "+p_Price+"원");
+		System.out.println("일련번호 : "+p_Num);
 	}
-
-
 }

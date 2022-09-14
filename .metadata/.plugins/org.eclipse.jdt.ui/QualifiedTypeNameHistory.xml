@@ -26,7 +26,6 @@
     <fullyQualifiedTypeName name="Car_Menu.car_Menu"/>
     <fullyQualifiedTypeName name="javax.swing.text.DefaultCaret"/>
     <fullyQualifiedTypeName name="javax.swing.SwingUtilities"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="Car_Array.car"/>
     <fullyQualifiedTypeName name="Car_Array.car_SportsCar"/>
     <fullyQualifiedTypeName name="menuTest.mainPlay"/>
@@ -45,4 +44,9 @@
     <fullyQualifiedTypeName name="CVS.Ramen"/>
     <fullyQualifiedTypeName name="CVS.Snack"/>
     <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="Member.Member"/>
+    <fullyQualifiedTypeName name="java.lang.Boolean"/>
+    <fullyQualifiedTypeName name="Coffee"/>
+    <fullyQualifiedTypeName name="caffeAmericano"/>
 </qualifiedTypeNameHistroy>

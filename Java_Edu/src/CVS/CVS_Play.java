@@ -12,88 +12,83 @@ public class CVS_Play {
 	// 테스트 샘플
 	static void sample() {
 		
-		Product tmp201 = new Product();
-		tmp201.setProduct("마이쮸", 200, 1001);
-		CVS.add(tmp201);
-		
-		Product tmp202 = new Product();
-		tmp202.setProduct("크런키", 150, 1002);
-		CVS.add(tmp202);
-		
-		Product tmp203 = new Product();
-		tmp203.setProduct("이것이자바다", 20000, 1003);
-		CVS.add(tmp203);
-		
-		Product tmp204 = new Product();
-		tmp204.setProduct("에어팟", 199000, 1004);
-		CVS.add(tmp204);
-		
-		
-		Coffee tmp1 = new Coffee();	
-		tmp1.setCoffee("아메리카노", 2500, 11, 300);
+		Product tmp1 = new Product();
+		tmp1.setProduct("마이쮸", 200, 1001);
 		CVS.add(tmp1);
 		
-		Coffee tmp2 = new Coffee();
-		tmp2.setCoffee("카페라떼", 3200, 12, 450);
+		Product tmp2 = new Product();
+		tmp2.setProduct("크런키", 150, 1002);
 		CVS.add(tmp2);
 		
-		Coffee tmp3 = new Coffee();
-		tmp3.setCoffee("아이스티", 3000, 13, 0);
+		Product tmp3 = new Product();
+		tmp3.setProduct("이것이자바다", 20000, 1003);
 		CVS.add(tmp3);
 		
-		Coffee tmp4 = new Coffee();
-		tmp4.setCoffee("카라멜마끼아또", 3500, 14, 420);
+		Product tmp4 = new Product();
+		tmp4.setProduct("에어팟", 199000, 1004);
 		CVS.add(tmp4);
 		
 		
+		Coffee tmp5 = new Coffee();	
+		tmp5.setCoffee("아메리카노", 2500, 11, 300);
+		CVS.add(tmp5);
+		
+		Coffee tmp6 = new Coffee();
+		tmp6.setCoffee("카페라떼", 3200, 12, 450);
+		CVS.add(tmp6);
+		
+		Coffee tmp7 = new Coffee();
+		tmp7.setCoffee("아이스티", 3000, 13, 0);
+		CVS.add(tmp7);
+		
+		Coffee tmp8 = new Coffee();
+		tmp8.setCoffee("카라멜마끼아또", 3500, 14, 420);
+		CVS.add(tmp8);
+		
+		
+		Ramen tmp9 = new Ramen();
+		tmp9.setRamen("신라면", 700, 51, 50);
+		CVS.add(tmp9);
+		
+		Ramen tmp10 = new Ramen();
+		tmp10.setRamen("진라면", 700, 52, 150);
+		CVS.add(tmp10);
+		
 		Ramen tmp11 = new Ramen();
-		tmp11.setRamen("신라면", 700, 51, 50);
+		tmp11.setRamen("사리곰탕", 700, 53, 200);
 		CVS.add(tmp11);
 		
 		Ramen tmp12 = new Ramen();
-		tmp12.setRamen("진라면", 700, 52, 150);
+		tmp12.setRamen("스낵면", 700, 54, 300);
 		CVS.add(tmp12);
 		
-		Ramen tmp13 = new Ramen();
-		tmp13.setRamen("사리곰탕", 700, 53, 200);
+		
+		
+		Snack tmp13 = new Snack();
+		tmp13.setSnack("바나나킥", 1500, 101, 230);
 		CVS.add(tmp13);
 		
-		Ramen tmp14 = new Ramen();
-		tmp14.setRamen("스낵면", 700, 54, 300);
+		Snack tmp14 = new Snack();
+		tmp14.setSnack("조청유과", 1500, 102, 350);
 		CVS.add(tmp14);
 		
+		Snack tmp15 = new Snack();
+		tmp15.setSnack("양파링", 1500, 103, 200);
+		CVS.add(tmp15);
 		
-		
-		Snack tmp21 = new Snack();
-		tmp21.setSnack("바나나킥", 1500, 101, 230);
-		CVS.add(tmp21);
-		
-		Snack tmp22 = new Snack();
-		tmp22.setSnack("조청유과", 1500, 102, 350);
-		CVS.add(tmp22);
-		
-		Snack tmp23 = new Snack();
-		tmp23.setSnack("양파링", 1500, 103, 200);
-		CVS.add(tmp23);
-		
-		Snack tmp24 = new Snack();
-		tmp24.setSnack("오잉", 1500, 104, 400);
-		CVS.add(tmp24);
-		
-		Snack tmp25 = new Snack();
-		tmp25.setSnack("허니버터칩", 1500, 105, 570);
-		CVS.add(tmp25);
+		Snack tmp16 = new Snack();
+		tmp16.setSnack("오잉", 1500, 104, 400);
+		CVS.add(tmp16);
 	}
-	
 	
 	// 메인 메뉴 Play
 	static void productPlay() {
 		while(true) {
-			System.out.println("▣▣▣ CU 상품 관리 ▣▣▣");
-			System.out.println(" 1. 상품 등록");
-			System.out.println(" 2. 상품 정보 조회");
-			System.out.println(" 3. 상품 검색");
-			System.out.println(" 4. 종료");
+			System.out.println("▣▣▣ 편의점 상품 관리 ▣▣▣");
+			System.out.println(" 1 | 상품 등록");
+			System.out.println(" 2 | 상품 정보 조회");
+			System.out.println(" 3 | 상품 검색");
+			System.out.println(" 4 | 종료");
 			int product;
 			product = sc.nextInt( );
 		 
@@ -121,10 +116,10 @@ public class CVS_Play {
 		}
 	}
 	
-	
 	// 1.상품 등록
 	static void regProduct() {
-		System.out.println("◆◇◆ 등록할 상품의 종류를 선택해주세요 ◆◇◆");
+		System.out.println("[ 상품 등록 ]");
+		System.out.println("▶ 상품의 종류를 선택하세요");
 		System.out.println(" 1 | 커피 Coffee\n 2 | 라면 Ramen\n 3 | 과자 Snack\n 4 | 그 외");
 		int product = sc.nextInt();
 		
@@ -132,11 +127,11 @@ public class CVS_Play {
 		int tmp_proPrice;
 		int tmp_proNum;
 		
-		System.out.print("이름 : ");
+		System.out.print("상품명 : ");
 		tmp_proName = sc.next();
 		System.out.print("가격 : ");
 		tmp_proPrice = sc.nextInt();
-		System.out.print("고유 번호 : ");
+		System.out.print("고유번호 : ");
 		tmp_proNum = sc.nextInt();
 		
 		switch (product) {
@@ -145,7 +140,7 @@ public class CVS_Play {
 				Coffee tmp = new Coffee();	
 				int tmp_proCaffeine;
 				
-				System.out.print("카페인 함유량 : ");
+				System.out.print("카페인함유량 : ");
 				tmp_proCaffeine = sc.nextInt();
 				
 				tmp.setCoffee(tmp_proName, tmp_proPrice, tmp_proNum, tmp_proCaffeine);
@@ -159,7 +154,7 @@ public class CVS_Play {
 				Ramen tmp = new Ramen();	
 				int tmp_proSalt;
 				
-				System.out.print("염분 함유량 : ");
+				System.out.print("나트륨함유량 : ");
 				tmp_proSalt = sc.nextInt();
 				
 				tmp.setRamen(tmp_proName, tmp_proPrice, tmp_proNum, tmp_proSalt);
@@ -195,76 +190,75 @@ public class CVS_Play {
 		} 
 	}
 	
-	
 	// 2.모든 상품 정보 출력
 	static void printProduct() {
-		System.out.println(">> 모든 상품 정보 <<");
+		System.out.println("[ 상품 조회 ]");
+		System.out.println("◆◆◆ 모든 상품 정보 ◆◆◆");
+		System.out.println("▶ 현재 상품 수 : " + CVS.size() +" 개");
 		for(int i=0; i<CVS.size(); i++) {
-			if(CVS.get(i) instanceof Coffee) {
+			if(CVS.get(i) instanceof Coffee) {		 // 커피일 경우
 				Coffee print = (Coffee)CVS.get(i);
 				print.putCoffee();
 				System.out.println();
-			}
-			if(CVS.get(i) instanceof Ramen) {
+			} else if(CVS.get(i) instanceof Ramen) { // 라면일 경우
 				Ramen print = (Ramen)CVS.get(i);
 				print.putRamen();
 				System.out.println();
-			}
-			if(CVS.get(i) instanceof Snack) {
+			} else if(CVS.get(i) instanceof Snack) { // 과자일 경우
 				Snack print = (Snack)CVS.get(i);
 				print.putSnack();
 				System.out.println();
+			} else {								 // 그 외 경우
+				CVS.get(i).putProduct();
+				System.out.println();
 			}
-			CVS.get(i).putProduct();
-			System.out.println();
 		}
+		System.out.println();
 	}
 	
-	
 	static void searchProduct() {
-		System.out.println(">>>>> 상품 정보 검색 <<<<<");
-		System.out.println("  1. 상품명으로 찾기\n  2. 가격으로 찾기\n  3. 일련번호로 찾기");
+		System.out.println("[ 상품 정보 검색 ]");
+		System.out.println(" 1 | 상품명으로 찾기\n 2 | 가격으로 찾기\n 3 | 일련번호로 찾기");
 		int searchCategory = sc.nextInt();
 
 		switch(searchCategory) {
 			case 1: {
-				System.out.println("검색할 상품명을 입력하세요.");
+				System.out.println("검색할 상품명을 입력하세요");
 				String pro_Name = sc.next();
 				int count = 0;
+				boolean result = false;
 	
 				for(int i=0; i<CVS.size(); i++) {
 					if(CVS.get(i).getProductName().equals(pro_Name)) {
 						count = i;
-						System.out.println(count+" 성공");
+						result = true;
 						break;
 					}
 					if(i == (CVS.size()-1)) {
-						System.out.println("오류");
+						System.out.println("일치하지 않습니다");
 						break;
 					} 
 				}
-				System.out.println("◆ 해당 상품명과 일치하는 상품 정보 ◆");
-				System.out.print("이름 : " + CVS.get(count).getProductName());
-				System.out.println("\t가격 : " + CVS.get(count).getProductPrice()+" 원");
-				if(CVS.get(count) instanceof Coffee) {
-					Coffee print = (Coffee)CVS.get(count);
-					System.out.println("카페인 함유량 : " + print.getCoffeeCaffeine() + "mg");
-				} 
-				if(CVS.get(count) instanceof Ramen) {
-					Ramen print = (Ramen)CVS.get(count);
-					System.out.println("염분 함유량 : " + print.getRamenSalt() + "mg");
-				}
-				if(CVS.get(count) instanceof Snack) {
-					Snack print = (Snack)CVS.get(count);
-					System.out.println("칼로리 : " + print.getSnackKcal() + " Kcal");
-				}
-				System.out.println("고유번호 : " + CVS.get(count).getProductNum()+"\n");
-				
-					
+
+				if(result == true) {
+					System.out.println("[ 검색결과 ]");
+					System.out.print("이름 : " + CVS.get(count).getProductName());
+					System.out.println("\t가격 : " + CVS.get(count).getProductPrice()+" 원");
+					if(CVS.get(count) instanceof Coffee) {
+						Coffee print = (Coffee)CVS.get(count);
+						System.out.println("카페인함유량 : " + print.getCoffeeCaffeine() + "mg");
+					} 
+					if(CVS.get(count) instanceof Ramen) {
+						Ramen print = (Ramen)CVS.get(count);
+						System.out.println("나트륨함유량 : " + print.getRamenSalt() + "mg");
+					}
+					if(CVS.get(count) instanceof Snack) {
+						Snack print = (Snack)CVS.get(count);
+						System.out.println("칼로리 : " + print.getSnackKcal() + " Kcal");
+					}
+					System.out.println("고유번호 : " + CVS.get(count).getProductNum()+"\n");
+					}
 				} break;
-		
-			
-			
 			
 		}
 	}		

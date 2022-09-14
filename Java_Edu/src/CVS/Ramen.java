@@ -18,7 +18,7 @@ public class Ramen extends Product {
 	
 	protected void putRamen() {
 		super.putProduct();
-		System.out.println("염분 함유량 : "+p_Salt+" g");
+		System.out.println("나트륨함유량 : "+p_Salt+" mg");
 	}
 
 }
