@@ -1,54 +1,67 @@
 
 public class Contact {
-	private String Name;
-	private String phoneNum;
-	private String Email;
-	private String Address;
-	private String Birthday;
-	private String Group;
+
+	private String name;
+	private String phoneNumber;
+	private String email;
+	private String address;
+	private String birthday;
+	private String group;
+	
+	//생성자
+	public Contact(String name, String phoneNumber, String email, String address, String birthday, String Group) {
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+		this.email = email;
+		this.address = address;
+		this.birthday = birthday;
+		this.group = Group;
+	}
+	
+	// 출력 메소드
+	protected void printInfo() {
+		System.out.print("이름 : "+ name);
+		System.out.println("  |  전화번호 : "+ phoneNumber);
+		System.out.println("이메일 : "+ email);
+		System.out.println("주소 : "+ address);
+		System.out.println("생일 : "+ birthday);
+		System.out.println("그룹 : "+ group);
+	}
 	
 	protected String getName() {
-		return Name;
+		return name;
 	}
-	protected String getPhoneNum() {
-		return phoneNum;
+	protected void setName(String name) {
+		this.name = name;
+	}
+	protected String getPhoneNumber() {
+		return phoneNumber;
+	}
+	protected void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 	protected String getEmail() {
-		return Email;
+		return email;
+	}
+	protected void setEmail(String email) {
+		this.email = email;
 	}
 	protected String getAddress() {
-		return Address;
+		return address;
+	}
+	protected void setAddress(String address) {
+		this.address = address;
 	}
 	protected String getBirthday() {
-		return Birthday;
+		return birthday;
+	}
+	protected void setBirthday(String birthday) {
+		this.birthday = birthday;
 	}
 	protected String getGroup() {
-		return Group;
+		return group;
 	}
-	
-	protected void setGroup(String tmp_group) {
-		Group = tmp_group;
-		System.out.println("그룹 정보 변경");
-	}
-	protected void setContact(String tmp_name, String tmp_phone, String tmp_email, 
-			 String tmp_address, String tmp_birthday, String tmp_group) {
-		Name = tmp_name;
-		phoneNum = tmp_phone;
-		Email = tmp_email;
-		Address = tmp_address;
-		Birthday = tmp_birthday;
-		Group = tmp_group;
-	}
-	
-	protected void printInfo() {
-		System.out.println("================================");
-		System.out.println("이름 : "+Name);
-		System.out.println("전화번호 : "+phoneNum);
-		System.out.println("이메일 : "+Email);
-		System.out.println("주소 : "+Address);
-		System.out.println("생일 : "+Birthday);
-		System.out.println("그룹 : "+Group);
-		System.out.println("================================");
-
+	protected void setGroup(String group) {
+		this.group = group;
 	}
 }

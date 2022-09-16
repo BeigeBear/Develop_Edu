@@ -18,7 +18,6 @@
 <fullyQualifiedTypeName name="javax.sql.rowset.serial.SQLOutputImpl"/>
 <fullyQualifiedTypeName name="java.awt.Menu"/>
 <fullyQualifiedTypeName name="Car_Menu.car"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="Car_Menu.car_Sedan"/>
 <fullyQualifiedTypeName name="Car_Menu.car_Sports"/>
 <fullyQualifiedTypeName name="Car_Menu.car_SUV"/>
@@ -43,13 +42,20 @@
 <fullyQualifiedTypeName name="CVS.Ramen"/>
 <fullyQualifiedTypeName name="CVS.Snack"/>
 <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="Member.Member"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
 <fullyQualifiedTypeName name="Coffee"/>
 <fullyQualifiedTypeName name="caffeAmericano"/>
-<fullyQualifiedTypeName name="Contact"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.Process"/>
 <fullyQualifiedTypeName name="ContactMain"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="miniProject_0916.Person"/>
+<fullyQualifiedTypeName name="miniProject_0916.jumsu"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.Void"/>
+<fullyQualifiedTypeName name="Contact"/>
+<fullyQualifiedTypeName name="SmartPhone"/>
+<fullyQualifiedTypeName name="SmartPhoneMain"/>
 </qualifiedTypeNameHistroy>

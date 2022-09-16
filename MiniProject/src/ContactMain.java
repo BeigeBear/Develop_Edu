@@ -1,42 +1,22 @@
 public class ContactMain {
-	String name;
-	String phone;
-	String email;
-	String address;
-	String birthday;
-	String group;
-
-	public ContactMain(String tmp_name, String tmp_phone, String tmp_email, 
-			 String tmp_address, String tmp_birthday, String tmp_group) {
-		this.name = tmp_name;
-		this.phone = tmp_phone;
-		this.email = tmp_email;
-		this.address = tmp_address;
-		this.birthday = tmp_birthday;
-		this.group = tmp_group;
-	}
 
 	public static void main(String[] args) {
 		
-		Contact friend = new Contact();
-
-//		tmp_name = "임재영";
-//		tmp_phone = "010-5327-2679";
-//		tmp_email = "cameogu@gmail.com";
-//		tmp_address = "강남구";
-//		tmp_birthday = "1995/08/19";
-//		tmp_group = "가족";
-
-//		friend.setContact(tmp_name, tmp_phone, tmp_email, tmp_address,
-//				tmp_birthday, tmp_group);
-		
-		// 최초
-		friend.printInfo();
-		
-		friend.setGroup("친구");
-		
-		// 최종
-		friend.printInfo();
+	Contact contact = new Contact("임재영", "010-5327-2679", "cameogu@gmail.com", "서울시 송파구", "1995-08-19", "가족");
+	
+	System.out.println("이름 : " + contact.getName());
+	System.out.println("전화번호 : " + contact.getPhoneNumber());
+	System.out.println("이메일 : " + contact.getEmail());
+	System.out.println("주소 : " + contact.getAddress());
+	System.out.println("생일 : " + contact.getName());
+	System.out.println("그룹 : " + contact.getGroup());
+	
+	System.out.println("======================================");
+	System.out.println("그룹 정보 변경");
+	
+	contact.setGroup("친구");
+	
+	System.out.println("======================================");
+	contact.printInfo();
 	}
-
 }

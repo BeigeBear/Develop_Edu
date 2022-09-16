@@ -10,7 +10,7 @@ public class CVS_Play {
 	static ArrayList<Product> CVS = new ArrayList<Product>();
 	
 	// 테스트 샘플
-	static void sample() {
+	void sample() {
 		
 		Product tmp1 = new Product();
 		tmp1.setProduct("마이쮸", 200, 1001);
@@ -82,7 +82,7 @@ public class CVS_Play {
 	}
 	
 	// 메인 메뉴 Play
-	static void productPlay() {
+	void productPlay() {
 		while(true) {
 			System.out.println("▣▣▣ 편의점 상품 관리 ▣▣▣");
 			System.out.println(" 1 | 상품 등록");
