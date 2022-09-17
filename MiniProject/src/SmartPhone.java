@@ -4,37 +4,41 @@ public class SmartPhone {
 
 	Scanner sc = new Scanner(System.in);
 	
-	Contact[] arr = new Contact[10];
+	// 객체 10개 생성
+	Contact[] contact = new Contact[10];
 	
 	// 객체 생성
 	protected void inputContactData() {
 		System.out.println("───────────────────────────────────");
 		System.out.println(" 메뉴 접근 전 2개의 연락처를 먼저 입력합니다");
 		for(int i=0; i<2; i++) {
-			addContact();
+//			addContact();
 		}
 		for(int i=0; i<10; i++) {
 			if(i%2 == 0) {
-				arr[i] = arr[0];
+				contact[i] = contact[0];
 			}
 			if(i%2 == 1) {
-				arr[i] = arr[1];
+				contact[i] = contact[1];
 			}
 		}
 	}
 	
 	
-	protected void addContact() {
-		int count = 0;
-		for(int i=0; i<arr.length; i++) {
-			if(arr[i] == null) {
-				count = i;
+	protected void addContact(Contact contact) {
+		String name;
+		
+		Contact contactAdd = new Contact(name, phoneNumber, email, address, birthday, Group));
+		int nullNum = 0;
+		for(int i=0; i<contact.length; i++) {
+			if(contact[i] == null) {
+				nullNum = i;
 				break;
 			}
 		}
 		System.out.println("───────────────────────────────────");
 		System.out.print(" 이름 : ");
-		String name = sc.next();
+		addName = sc.next();
 		System.out.print(" 전화번호 : ");
 		String phoneNumber = sc.next();
 		System.out.print(" 이메일 : ");
@@ -45,9 +49,10 @@ public class SmartPhone {
 		String birthday = sc.next();
 		System.out.print(" 그룹 : ");
 		String group = sc.next();
-		arr[count] = new Contact(name, phoneNumber, email, address, birthday, group);
 		System.out.println("───────────────────────────────────");
-		System.out.println(" 연락처 정보가 "+(count+1)+"번으로 저장되었습니다.");
+		System.out.println(" 연락처 정보가 "+(nullNum+1)+"번으로 저장되었습니다.");
+		
+		contact[nullNum] = new Contact(name, phoneNumber, email, address, birthday, group);
 	}
 	
 	

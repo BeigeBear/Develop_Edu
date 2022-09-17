@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMCryptoBinary"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
 <fullyQualifiedTypeName name="java.util.function.DoubleToLongFunction"/>
@@ -48,14 +47,17 @@
 <fullyQualifiedTypeName name="caffeAmericano"/>
 <fullyQualifiedTypeName name="java.lang.Process"/>
 <fullyQualifiedTypeName name="ContactMain"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="miniProject_0916.Person"/>
 <fullyQualifiedTypeName name="miniProject_0916.jumsu"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.lang.Void"/>
-<fullyQualifiedTypeName name="Contact"/>
 <fullyQualifiedTypeName name="SmartPhone"/>
 <fullyQualifiedTypeName name="SmartPhoneMain"/>
+<fullyQualifiedTypeName name="Contact"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="Member"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="Student"/>
+<fullyQualifiedTypeName name="Person"/>
 </qualifiedTypeNameHistroy>
