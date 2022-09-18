@@ -3,11 +3,14 @@ import java.util.Scanner;
 public class SmartPhoneMain {
 	
 	Scanner sc = new Scanner(System.in);
-	
-	SmartPhone arr = new SmartPhone();
-	
+
 	protected void printMenu() {
-		arr.inputContactData();
+		
+		Contact contact = new Contact(null, null, null, null, null, null);
+		Contact newContact = new Contact(null, null, null, null, null, null);
+		SmartPhone smartphone = new SmartPhone();
+		
+		smartphone.inputContactData();
 		
 		while(true) {
 			System.out.println("Contact ===========================");
@@ -22,22 +25,28 @@ public class SmartPhoneMain {
 			int tmp = sc.nextInt();
 			switch (tmp) {
 				case 1:{
-					arr.addContact();
+					smartphone.addContact(contact);
 				} break;
 				case 2:{
-					arr.printAllContact();
+					smartphone.printAllContact();
 				} break;
 				case 3:{
-					arr.searchContact();
+					System.out.println("검색할 연락처의 이름을 입력하세요");
+					sc.next();
+					smartphone.searchContact(sc.nextLine());
 				} break;
 				case 4:{
-					arr.deleteContact();
+					System.out.println("삭제할 연락처의 이름을 입력하세요");
+					String name = sc.nextLine();
+					smartphone.deleteContact(name);
 				} break;
 				case 5:{
-					arr.editContact();
+					System.out.println("수정할 연락처의 이름을 입력하세요");
+					String name = sc.nextLine();
+					smartphone.editContact(name, newContact);
 				} break;
 				case 6:{
-					arr.exitProgram();
+					smartphone.exitProgram();
 				} return;
 				default:{
 					System.out.println("잘못 입력되었습니다");
@@ -56,10 +65,11 @@ public class SmartPhoneMain {
 	
 	public static void main(String[] args) {
 		
-		SmartPhoneMain arr = new SmartPhoneMain();
-		
-		arr.printMenu();
-		
+//		
+//		SmartPhoneMain arr = new SmartPhoneMain();
+//		
+//		arr.printMenu();
+//		
 
 	}
 

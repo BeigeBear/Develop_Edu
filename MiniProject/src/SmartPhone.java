@@ -7,12 +7,13 @@ public class SmartPhone {
 	// 객체 10개 생성
 	Contact[] contact = new Contact[10];
 	
-	// 객체 생성
+	// 최초 연락처 저장
 	protected void inputContactData() {
 		System.out.println("───────────────────────────────────");
-		System.out.println(" 메뉴 접근 전 2개의 연락처를 먼저 입력합니다");
+		System.out.println(" 최초 실행시 연락처 2개를 먼저 입력합니다");
 		for(int i=0; i<2; i++) {
-//			addContact();
+			Contact input = new Contact(null, null, null, null, null, null);
+			addContact(input); // 완성 후 추가
 		}
 		for(int i=0; i<10; i++) {
 			if(i%2 == 0) {
@@ -24,154 +25,131 @@ public class SmartPhone {
 		}
 	}
 	
-	
-	protected void addContact(Contact contact) {
-		String name;
-		
-		Contact contactAdd = new Contact(name, phoneNumber, email, address, birthday, Group));
-		int nullNum = 0;
+	// 연락처 추가
+	protected void addContact(Contact addcontact) {
+		// 빈 공간 찾기
+		int nullnum = 0;
 		for(int i=0; i<contact.length; i++) {
 			if(contact[i] == null) {
-				nullNum = i;
+				nullnum = i;
 				break;
 			}
 		}
+		// 값 입력
 		System.out.println("───────────────────────────────────");
 		System.out.print(" 이름 : ");
-		addName = sc.next();
+		addcontact.setName(sc.nextLine());
 		System.out.print(" 전화번호 : ");
-		String phoneNumber = sc.next();
+		addcontact.setPhoneNumber(sc.nextLine());
 		System.out.print(" 이메일 : ");
-		String email = sc.next();
+		addcontact.setEmail(sc.nextLine());
 		System.out.print(" 주소 : ");
-		String address = sc.next();
+		addcontact.setAddress(sc.nextLine());
 		System.out.print(" 생일 : ");
-		String birthday = sc.next();
+		addcontact.setBirthday(sc.nextLine());
 		System.out.print(" 그룹 : ");
-		String group = sc.next();
-		System.out.println("───────────────────────────────────");
-		System.out.println(" 연락처 정보가 "+(nullNum+1)+"번으로 저장되었습니다.");
-		
-		contact[nullNum] = new Contact(name, phoneNumber, email, address, birthday, group);
-	}
-	
-	
-	void printContact() {
-		System.out.println("출력할 연락처의 번호를 입력하세요");
-		int num = sc.nextInt()-1;
-		System.out.println("───────────────────────────────────");
-		System.out.println("[ "+(num+1)+"번 연락처 정보 ]");
-		System.out.println(" 이름 : " + arr[num].getName());
-		System.out.println(" 전화번호 : " + arr[num].getPhoneNumber());
-		System.out.println(" 이메일 : " + arr[num].getEmail());
-		System.out.println(" 주소 : " + arr[num].getAddress());
-		System.out.println(" 생일 : " + arr[num].getBirthday());
-		System.out.println(" 그룹 : " + arr[num].getGroup());
+		addcontact.setGroup(sc.nextLine());
+		// 대입 저장
+		contact[nullnum] = addcontact;
+		System.out.println(" ▶ 연락처가 "+(nullnum+1)+"번으로 저장되었습니다.");
 		System.out.println("───────────────────────────────────");
 	}
 	
+	// 연락처 정보 출력
+	void printContact(Contact contact) {
+		System.out.println("이름 : "+contact.getName());
+		System.out.println("전화번호 : "+contact.getPhoneNumber());
+		System.out.println("이메일 : "+contact.getEmail());
+		System.out.println("주소 : "+contact.getAddress());
+		System.out.println("생일  : "+contact.getBirthday());
+		System.out.println("그룹  : "+contact.getGroup());
+	}
 	
 	void printAllContact() {
+		SmartPhone smartphone = new SmartPhone();
 		System.out.println("[ 모든 연락처 정보 ]");
-		for(int i=0; i<arr.length; i++) {
+		for(int i=0; i<contact.length; i++) {
 			System.out.println("───────────────────────────────────");
 			System.out.println("[ "+(i+1)+"번 연락처 정보 ]");
-			arr[i].printInfo();
+			smartphone.printContact(contact[i]);
 		}
 		System.out.println("───────────────────────────────────");
 	}
 	
-	
-	void searchContact() {
-		System.out.println("검색할 연락처의 이름을 입력하세요");
-		String tmpName = sc.next();
-		for(int i=0; i<arr.length; i++) {
-			if(arr[i].getName().equals(tmpName)) {
+	void searchContact(String name) {
+		SmartPhone smartphone = new SmartPhone();
+		for(int i=0; i<contact.length; i++) {
+			if(contact[i].getName().equals(name)) {
 				System.out.println("입력하신 이름과 일치하는 연락처 정보입니다");
 				System.out.println("───────────────────────────────────");
-				arr[i].printInfo();
+				smartphone.printContact(contact[i]);
 				System.out.println("───────────────────────────────────");
 			}
 		}
 	}
 	
-	
-	void deleteContact() {
-		System.out.println("삭제할 연락처의 이름을 입력하세요");
-		String tmpName = sc.next();
-		int count = 0;
-		for(int i=0; i<arr.length; i++) {
-			if(arr[i].getName().equals(tmpName)) {
-				count = i;
+	void deleteContact(String name) {
+		for(int i=0; i<contact.length; i++) {
+			if(contact[i].getName().equals(name)) {
+				contact[i].setName(null);
+				contact[i].setPhoneNumber(null);
+				contact[i].setEmail(null);
+				contact[i].setAddress(null);
+				contact[i].setBirthday(null);
+				contact[i].setGroup(null);
 			}
 		}
-		arr[count].setName(null);
-		arr[count].setPhoneNumber(null);
-		arr[count].setEmail(null);
-		arr[count].setAddress(null);
-		arr[count].setBirthday(null);
-		arr[count].setGroup(null);
 	}
 	
-	
-	void editContact() {
-		System.out.println("수정할 연락처의 이름을 입력하세요");
-		String tmpName = sc.next();
-		int count = 0;
-		for(int i=0; i<arr.length; i++) {
-			if(arr[i].getName().equals(tmpName)) {
-				count = i;
+	void editContact(String name, Contact newContact) {
+		int editNum;
+		for(editNum=0; editNum<contact.length; editNum++) {
+			if(contact[editNum].getName().equals(name)) {
+				newContact = contact[editNum];
 			}
 		}
+		System.out.println("───────────────────────────────────");
 		System.out.println("수정할 항목의 번호를 선택하세요");
+		System.out.println("───────────────────────────────────");
 		System.out.println("1.이름\n2.전화번호\n3.이메일\n4.주소\n5.생일\n6.그룹");
-		int tmpNum = sc.nextInt();
-		switch(tmpNum) {
-			case 1:{
+		System.out.println("───────────────────────────────────\n 선택 : ");
+		String select= sc.next();
+		switch(select) {
+			case "1":{
 				System.out.println("수정할 이름을 입력하세요");
-				String tmpName1 = sc.next();
-				arr[count].setName(tmpName1);
+				newContact.setName(sc.nextLine());
 				System.out.println("수정 완료하였습니다");
 			} break;
-			case 2:{
+			case "2":{
 				System.out.println("수정할 전화번호를 입력하세요");
-				String tmpPhone = sc.next();
-				arr[count].setPhoneNumber(tmpPhone);
+				newContact.setPhoneNumber(sc.nextLine());
 				System.out.println("수정 완료하였습니다");
-
 			} break;
-			case 3:{
+			case "3":{
 				System.out.println("수정할 이메일을 입력하세요");
-				String tmpEmail = sc.next();
-				arr[count].setEmail(tmpEmail);
+				newContact.setEmail(sc.nextLine());
 				System.out.println("수정 완료하였습니다");
-
 			} break;
-			case 4:{
+			case "4":{
 				System.out.println("수정할 주소를 입력하세요");
-				String tmpAddress = sc.next();
-				arr[count].setName(tmpAddress);
+				newContact.setAddress(sc.nextLine());
 				System.out.println("수정 완료하였습니다");
-
 			} break;
-			case 5:{
+			case "5":{
 				System.out.println("수정할 생일을 입력하세요");
-				String tmpBirth = sc.next();
-				arr[count].setName(tmpBirth);
+				newContact.setBirthday(sc.nextLine());
 				System.out.println("수정 완료하였습니다");
-
 			} break;
-			case 6:{
+			case "6":{
 				System.out.println("수정할 그룹명을 입력하세요");
-				String tmpGroup = sc.next();
-				arr[count].setName(tmpGroup);
+				newContact.setGroup(sc.nextLine());
 				System.out.println("수정 완료하였습니다");
-
 			} break;
 			default: {
-				System.out.println("번호를 잘못 입력했습니다");
+				System.out.println("잘못 입력했습니다, 다시 시도해주세요.");
 			} break;
 		}
+		contact[editNum] = newContact;
 	}
 	
 	void exitProgram() {

@@ -52,12 +52,12 @@
 <fullyQualifiedTypeName name="miniProject_0916.jumsu"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.lang.Void"/>
-<fullyQualifiedTypeName name="SmartPhone"/>
-<fullyQualifiedTypeName name="SmartPhoneMain"/>
-<fullyQualifiedTypeName name="Contact"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="Member"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="Student"/>
 <fullyQualifiedTypeName name="Person"/>
+<fullyQualifiedTypeName name="Contact"/>
+<fullyQualifiedTypeName name="SmartPhone"/>
+<fullyQualifiedTypeName name="SmartPhoneMain"/>
 </qualifiedTypeNameHistroy>
