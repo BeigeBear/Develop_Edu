@@ -1,22 +1,22 @@
 
 public class Contact {
 
-	private String name = "없음";
-	private String phoneNumber = "없음";
-	private String email = "없음";
-	private String address = "없음";
-	private String birthday = "없음";
-	private String group = "없음";
+	private String name;
+	private String phoneNumber;
+	private String email;
+	private String address;
+	private String birthday;
+	private String group;
 	
 	//생성자
-	public Contact(String name, String phoneNumber, String email, String address,
-			String birthday, String Group) {
+	protected Contact(String name, String phoneNumber, String email, String address,
+			String birthday, String group) {
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.email = email;
 		this.address = address;
 		this.birthday = birthday;
-		this.group = Group;
+		this.group = group;
 	}
 	
 	// 출력 메소드

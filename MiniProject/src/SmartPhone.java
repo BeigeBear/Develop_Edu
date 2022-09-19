@@ -7,13 +7,50 @@ public class SmartPhone {
 	// 객체 10개 생성
 	Contact[] contact = new Contact[10];
 	
+	
+	// 샘플 연락처
+	void Sample() {
+		Contact contact0 = new Contact("임재영", "01053257845", "cameogu@gmail.com", "경기 성남시", "08/14", "가족");
+		contact[0] = contact0;
+		Contact contact1 = new Contact("박서준", "01015471455", "sck06041@gmail.com", "서울 마포구", "07/01", "가족");
+		contact[1] = contact1;
+		Contact contact2 = new Contact("최우식", "01045741102", "woosick59@naver.com", "서울 송파구", "02/24", "친구");
+		contact[2] = contact2;
+		Contact contact3 = new Contact("최수빈", "01015471455", "universum@naver.com", "부산 진구", "11/21", "가족");
+		contact[3] = contact3;
+		Contact contact4 = new Contact("임영", "01053257845", "cameogu@gmail.com", "경기 성남시", "08/14", "가족");
+		contact[4] = contact4;
+		Contact contact5 = new Contact("박준", "01015471455", "sck06041@gmail.com", "서울 마포구", "07/01", "가족");
+		contact[5] = contact5;
+		Contact contact6 = new Contact("최식", "01045741102", "woosick59@naver.com", "서울 송파구", "02/24", "친구");
+		contact[6] = contact6;
+		Contact contact7 = new Contact("최빈", "01015471455", "universum@naver.com", "부산 진구", "11/21", "가족");
+		contact[7] = contact7;
+		Contact contact8 = new Contact("식", "01045741102", "woosick59@naver.com", "서울 송파구", "02/24", "친구");
+		contact[8] = contact8;
+		Contact contact9 = new Contact("빈", "01015471455", "universum@naver.com", "부산 진구", "11/21", "가족");
+		contact[9] = contact9;
+	}	
+	
+	
+	// 빈공간 찾기
+	int findNullContact() {
+		int i;
+		for(i=0; i<contact.length; i++) {
+			if(contact[i] == null) {
+				break;
+			}
+		} return i;
+	}
+	
+	
 	// 최초 연락처 저장
-	protected void inputContactData() {
+	void inputContactData() {
 		System.out.println("───────────────────────────────────");
-		System.out.println(" 최초 실행시 연락처 2개를 먼저 입력합니다");
+		System.out.println("최초 실행시 연락처 2개를 먼저 입력합니다");
 		for(int i=0; i<2; i++) {
-			Contact input = new Contact(null, null, null, null, null, null);
-			addContact(input); // 완성 후 추가
+			Contact inputcontact = new Contact(null, null, null, null, null, null);
+			addContact(inputcontact);
 		}
 		for(int i=0; i<10; i++) {
 			if(i%2 == 0) {
@@ -25,33 +62,27 @@ public class SmartPhone {
 		}
 	}
 	
+	
 	// 연락처 추가
-	protected void addContact(Contact addcontact) {
-		// 빈 공간 찾기
-		int nullnum = 0;
-		for(int i=0; i<contact.length; i++) {
-			if(contact[i] == null) {
-				nullnum = i;
-				break;
-			}
-		}
+	void addContact(Contact contact) {
+		int nullNum = findNullContact();
 		// 값 입력
 		System.out.println("───────────────────────────────────");
 		System.out.print(" 이름 : ");
-		addcontact.setName(sc.nextLine());
+		contact.setName(sc.nextLine());
 		System.out.print(" 전화번호 : ");
-		addcontact.setPhoneNumber(sc.nextLine());
+		contact.setPhoneNumber(sc.nextLine());
 		System.out.print(" 이메일 : ");
-		addcontact.setEmail(sc.nextLine());
+		contact.setEmail(sc.nextLine());
 		System.out.print(" 주소 : ");
-		addcontact.setAddress(sc.nextLine());
+		contact.setAddress(sc.nextLine());
 		System.out.print(" 생일 : ");
-		addcontact.setBirthday(sc.nextLine());
+		contact.setBirthday(sc.nextLine());
 		System.out.print(" 그룹 : ");
-		addcontact.setGroup(sc.nextLine());
+		contact.setGroup(sc.nextLine());
 		// 대입 저장
-		contact[nullnum] = addcontact;
-		System.out.println(" ▶ 연락처가 "+(nullnum+1)+"번으로 저장되었습니다.");
+		this.contact[nullNum] = contact;
+		System.out.println(" ▶ 연락처가 "+(nullNum+1)+"번으로 저장되었습니다.");
 		System.out.println("───────────────────────────────────");
 	}
 	
@@ -65,38 +96,40 @@ public class SmartPhone {
 		System.out.println("그룹  : "+contact.getGroup());
 	}
 	
+	// 모든 > 연락처 정보 출력
 	void printAllContact() {
 		SmartPhone smartphone = new SmartPhone();
 		System.out.println("[ 모든 연락처 정보 ]");
+		System.out.println("───────────────────────────────────");
 		for(int i=0; i<contact.length; i++) {
-			System.out.println("───────────────────────────────────");
+			if(!(contact[i] == null)) {
 			System.out.println("[ "+(i+1)+"번 연락처 정보 ]");
 			smartphone.printContact(contact[i]);
+			}
 		}
 		System.out.println("───────────────────────────────────");
 	}
 	
+	// 연락처 검색, 이름으로
 	void searchContact(String name) {
+//		int nullNum = findNullContact();
 		SmartPhone smartphone = new SmartPhone();
 		for(int i=0; i<contact.length; i++) {
 			if(contact[i].getName().equals(name)) {
 				System.out.println("입력하신 이름과 일치하는 연락처 정보입니다");
 				System.out.println("───────────────────────────────────");
 				smartphone.printContact(contact[i]);
-				System.out.println("───────────────────────────────────");
+				System.out.println("───────────────────────────────────\n");
 			}
 		}
 	}
-	
+
+	// 연락처 삭제
 	void deleteContact(String name) {
-		for(int i=0; i<contact.length; i++) {
+		int nullNum = findNullContact();
+		for(int i=0; i<nullNum; i++) {
 			if(contact[i].getName().equals(name)) {
-				contact[i].setName(null);
-				contact[i].setPhoneNumber(null);
-				contact[i].setEmail(null);
-				contact[i].setAddress(null);
-				contact[i].setBirthday(null);
-				contact[i].setGroup(null);
+				contact[i] = null;
 			}
 		}
 	}
@@ -104,7 +137,7 @@ public class SmartPhone {
 	void editContact(String name, Contact newContact) {
 		int editNum;
 		for(editNum=0; editNum<contact.length; editNum++) {
-			if(contact[editNum].getName().equals(name)) {
+			ifcontact[editNum].getName().equals(name)) {
 				newContact = contact[editNum];
 			}
 		}

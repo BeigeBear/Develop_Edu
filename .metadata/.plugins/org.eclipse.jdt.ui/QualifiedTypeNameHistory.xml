@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
-<fullyQualifiedTypeName name="java.util.function.DoubleToLongFunction"/>
-<fullyQualifiedTypeName name="java.util.function.DoubleToIntFunction"/>
-<fullyQualifiedTypeName name="Quiz.Game"/>
-<fullyQualifiedTypeName name="org.jcp.xml.dsig.internal.dom.DOMUtils"/>
-<fullyQualifiedTypeName name="ex.cellPhone"/>
-<fullyQualifiedTypeName name="ex.dmbCellPhone_ex"/>
-<fullyQualifiedTypeName name="ex.dmbCellPhone"/>
-<fullyQualifiedTypeName name="Quiz.Calc_Plus"/>
-<fullyQualifiedTypeName name="Quiz.car_SportsCar"/>
-<fullyQualifiedTypeName name="Quiz.car_Truck"/>
-<fullyQualifiedTypeName name="Book.book"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="javax.sql.rowset.serial.SQLOutputImpl"/>
 <fullyQualifiedTypeName name="java.awt.Menu"/>
@@ -54,10 +41,23 @@
 <fullyQualifiedTypeName name="java.lang.Void"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="Member"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="Student"/>
 <fullyQualifiedTypeName name="Person"/>
-<fullyQualifiedTypeName name="Contact"/>
-<fullyQualifiedTypeName name="SmartPhone"/>
 <fullyQualifiedTypeName name="SmartPhoneMain"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="miniPro0919.Account"/>
+<fullyQualifiedTypeName name="miniPro0919.CalculatorEx"/>
+<fullyQualifiedTypeName name="miniPro0919.Calculator"/>
+<fullyQualifiedTypeName name="miniPro0919.SingletonEx"/>
+<fullyQualifiedTypeName name="miniPro0919.Singleton"/>
+<fullyQualifiedTypeName name="Contact"/>
+<fullyQualifiedTypeName name="miniPro0919.People"/>
+<fullyQualifiedTypeName name="miniPro0919.Student"/>
+<fullyQualifiedTypeName name="miniPro0919.Person"/>
+<fullyQualifiedTypeName name="miniPro0919.Male"/>
+<fullyQualifiedTypeName name="miniPro0919.Female"/>
+<fullyQualifiedTypeName name="miniPro0919.Airplane"/>
+<fullyQualifiedTypeName name="miniPro0919.SupersonicAirplaneEx"/>
+<fullyQualifiedTypeName name="miniPro0919.SupersonicAirplane"/>
+<fullyQualifiedTypeName name="SmartPhone"/>
 </qualifiedTypeNameHistroy>
