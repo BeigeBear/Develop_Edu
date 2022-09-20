@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="javax.sql.rowset.serial.SQLOutputImpl"/>
-<fullyQualifiedTypeName name="java.awt.Menu"/>
-<fullyQualifiedTypeName name="Car_Menu.car"/>
-<fullyQualifiedTypeName name="Car_Menu.car_Sedan"/>
-<fullyQualifiedTypeName name="Car_Menu.car_Sports"/>
-<fullyQualifiedTypeName name="Car_Menu.car_SUV"/>
-<fullyQualifiedTypeName name="Car_Menu.car_Truck"/>
-<fullyQualifiedTypeName name="Car_Menu.car_Menu"/>
-<fullyQualifiedTypeName name="javax.swing.text.DefaultCaret"/>
-<fullyQualifiedTypeName name="javax.swing.SwingUtilities"/>
-<fullyQualifiedTypeName name="Car_Array.car"/>
-<fullyQualifiedTypeName name="Car_Array.car_SportsCar"/>
-<fullyQualifiedTypeName name="menuTest.mainPlay"/>
-<fullyQualifiedTypeName name="java.sql.SQLOutput"/>
-<fullyQualifiedTypeName name="CarArrayListMethod.carArrayListPlay"/>
-<fullyQualifiedTypeName name="menuTest.k5_Tire"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="menuTest.Tire"/>
 <fullyQualifiedTypeName name="CarArrayListMethodPolymo.car"/>
 <fullyQualifiedTypeName name="CarArrayListMethodPolymo.car_SportsCar"/>
 <fullyQualifiedTypeName name="CVS.Product_DE"/>
@@ -44,13 +25,11 @@
 <fullyQualifiedTypeName name="Student"/>
 <fullyQualifiedTypeName name="Person"/>
 <fullyQualifiedTypeName name="SmartPhoneMain"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="miniPro0919.Account"/>
 <fullyQualifiedTypeName name="miniPro0919.CalculatorEx"/>
 <fullyQualifiedTypeName name="miniPro0919.Calculator"/>
 <fullyQualifiedTypeName name="miniPro0919.SingletonEx"/>
 <fullyQualifiedTypeName name="miniPro0919.Singleton"/>
-<fullyQualifiedTypeName name="Contact"/>
 <fullyQualifiedTypeName name="miniPro0919.People"/>
 <fullyQualifiedTypeName name="miniPro0919.Student"/>
 <fullyQualifiedTypeName name="miniPro0919.Person"/>
@@ -59,5 +38,26 @@
 <fullyQualifiedTypeName name="miniPro0919.Airplane"/>
 <fullyQualifiedTypeName name="miniPro0919.SupersonicAirplaneEx"/>
 <fullyQualifiedTypeName name="miniPro0919.SupersonicAirplane"/>
+<fullyQualifiedTypeName name="HankookTire"/>
+<fullyQualifiedTypeName name="Vehicle.Vehicle"/>
+<fullyQualifiedTypeName name="Vehicle.Driver"/>
+<fullyQualifiedTypeName name="Vehicle.Bus"/>
+<fullyQualifiedTypeName name="Parent.Child"/>
+<fullyQualifiedTypeName name="Parent.Parent"/>
+<fullyQualifiedTypeName name="ChiniseFood.ChiniseRestaurant"/>
+<fullyQualifiedTypeName name="ChiniseFood.ChiniseRestaurantOne"/>
+<fullyQualifiedTypeName name="ChiniseFood.ChiniseRestaurnatTwo"/>
+<fullyQualifiedTypeName name="ChiniseFood.ChiniseRestaurantThree"/>
+<fullyQualifiedTypeName name="Phone.SmartPhone"/>
+<fullyQualifiedTypeName name="Animal.Animal"/>
+<fullyQualifiedTypeName name="Animal.Dog"/>
+<fullyQualifiedTypeName name="Animal.Cat"/>
+<fullyQualifiedTypeName name="Construtor.Bus"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="SmartPhone"/>
+<fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterInfo"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="Contact"/>
+<fullyQualifiedTypeName name="CompanyContact"/>
+<fullyQualifiedTypeName name="CustomerContact"/>
 </qualifiedTypeNameHistroy>

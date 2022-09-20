@@ -7,7 +7,6 @@ public class SmartPhone {
 	// 객체 10개 생성
 	Contact[] contact = new Contact[10];
 	
-	
 	// 샘플 연락처
 	void Sample() {
 		Contact contact0 = new Contact("임재영", "01053257845", "cameogu@gmail.com", "경기 성남시", "08/14", "가족");
@@ -31,7 +30,6 @@ public class SmartPhone {
 		Contact contact9 = new Contact("빈", "01015471455", "universum@naver.com", "부산 진구", "11/21", "가족");
 		contact[9] = contact9;
 	}	
-	
 	
 	// 빈공간 찾기
 	int findNullContact() {
