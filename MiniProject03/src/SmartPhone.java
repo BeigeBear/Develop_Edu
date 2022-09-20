@@ -2,7 +2,10 @@ import java.util.Scanner;
 
 public class SmartPhone {
 	
-	Contact contacts[];
+//	arr[0] = new Son();
+//	arr[1] = new Daughter();
+	
+	Contact[] contacts;
 	int countOfContact = 0;
 	Scanner in;
 	
@@ -26,19 +29,36 @@ public class SmartPhone {
 		String birthday = in.nextLine();
 		System.out.print("그룹 : ");
 		String group = in.nextLine();
-		
+		if(group.equals("회사")) {
+			System.out.print("회사이름 : ");
+			String companyname = in.nextLine();
+			System.out.print("부서 : ");
+			String companydepartment = in.nextLine();
+			System.out.print("직급 : ");
+			String companylevel = in.nextLine();
+			return new CompanyContact(name, phoneNumber, email, address, birthday, group,
+					companyname, companydepartment, companylevel);
+		} else if(group.equals("거래처")) {
+			System.out.print("거래처이름 : ");
+			String customername = in.nextLine();
+			System.out.print("거래품목 : ");
+			String customeritem = in.nextLine();
+			System.out.print("직급 : ");
+			String customerlevel = in.nextLine();
+			return new CustomerContact(name, phoneNumber, email, address, birthday, group,
+					customername, customeritem, customerlevel);
+		}
 		return new Contact(name, phoneNumber, email, address, birthday, group);
 	}
 	
-	// 배열에 거래처 연락처 객체 저장
-	public void addCustomerContact(CustomerContact contact) {
-		contacts[countOfContact] = contact;
-		countOfContact++;
-		System.out.println(">>> 데이터가 저장되었습니다.("+countOfContact+")");
-	}
-	
-	// 배열에 회사 연락처 객체 저장
-	public void addCompanyContact(CompanyContact contact) {
+	// 배열에 연락처 객체 저장
+	public void addContact(Contact contact) {
+		if(contact instanceof CompanyContact) {
+			contacts[countOfContact] = (CompanyContact)contact;
+		}
+		else if(contact instanceof CustomerContact) {
+			contacts[countOfContact] = (CustomerContact)contact;
+		}
 		contacts[countOfContact] = contact;
 		countOfContact++;
 		System.out.println(">>> 데이터가 저장되었습니다.("+countOfContact+")");
@@ -53,6 +73,18 @@ public class SmartPhone {
 		System.out.println("주소 : "+contact.getAddress());
 		System.out.println("생일 : "+contact.getBirthday());
 		System.out.println("그룹 : "+contact.getGroup());
+		if(contact instanceof CompanyContact) {
+			CompanyContact print = (CompanyContact)contact;
+			System.out.println("회사이름 : "+ print.getCompanyName());
+			System.out.println("부서이름 : "+ print.getCompanyDepartment());
+			System.out.println("직급 : "+ print.getCompanyLevel());
+		} 
+		else if(contact instanceof CustomerContact) {
+			CustomerContact print = (CustomerContact)contact;
+			System.out.println("거래처이름 : "+ print.getCustomerName());
+			System.out.println("거래품목 : "+ print.getCustomerItem());
+			System.out.println("직급 : "+ print.getCustomerLevel());
+		}
 	}
 	
 	// 모든 연락처 출력
@@ -84,6 +116,7 @@ public class SmartPhone {
 				countOfContact--;
 				return;
 			}
+			System.out.println("삭제되었습니다.");
 			
 		}
 		System.out.println("검색 결과가 없습니다.");

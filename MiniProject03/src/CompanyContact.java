@@ -5,8 +5,8 @@ public class CompanyContact extends Contact {
 	private String companyLevel;
 	
 	// 생성자 선언
-	public CompanyContact(String name, String phoneNumber, String email, String address,
-			String birthday, String group, String companyname, String companydepartment, String companylevel) {
+	public CompanyContact(String name, String phoneNumber, String email, String address, String birthday,
+			String group, String companyname, String companydepartment, String companylevel) {
 		super(name, phoneNumber, email, address, birthday, group);
 		this.companyName = companyname;
 		this.companyDepartment = companydepartment;
@@ -22,26 +22,22 @@ public class CompanyContact extends Contact {
 		System.out.println("직급 : "+companyLevel);
 	}
 	
+	// 겟터 셋터
 	protected String getCompanyName() {
 		return companyName;
 	}
-
 	protected void setCompanyName(String companyName) {
 		this.companyName = companyName;
 	}
-
 	protected String getCompanyDepartment() {
 		return companyDepartment;
 	}
-
 	protected void setCompanyDepartment(String companyDepartment) {
 		this.companyDepartment = companyDepartment;
 	}
-
 	protected String getCompanyLevel() {
 		return companyLevel;
 	}
-
 	protected void setCompanyLevel(String companyLevel) {
 		this.companyLevel = companyLevel;
 	}

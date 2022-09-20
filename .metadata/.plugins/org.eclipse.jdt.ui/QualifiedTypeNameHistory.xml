@@ -54,10 +54,10 @@
 <fullyQualifiedTypeName name="Animal.Cat"/>
 <fullyQualifiedTypeName name="Construtor.Bus"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="SmartPhone"/>
 <fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterInfo"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="Contact"/>
+<fullyQualifiedTypeName name="SmartPhone"/>
 <fullyQualifiedTypeName name="CompanyContact"/>
 <fullyQualifiedTypeName name="CustomerContact"/>
+<fullyQualifiedTypeName name="Contact"/>
 </qualifiedTypeNameHistroy>

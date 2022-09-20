@@ -6,7 +6,7 @@ public class SmartPhoneMain {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		SmartPhone smartphone = new SmartPhone();
-		
+
 		System.out.println("데이터 2개를 입력합니다.");
 		for(int i=0; i<2; i++) {
 			smartphone.addContact(smartphone.inputContactData());
@@ -20,7 +20,7 @@ public class SmartPhoneMain {
 				smartphone.addContact(smartphone.inputContactData());
 			
 			} else if(choiceMenu.equals("2")) {
-				// 메소드 구현				
+				smartphone.addContact(smartphone.inputContactData());
 				
 			} else if(choiceMenu.equals("3")) {
 				smartphone.printAllContact();

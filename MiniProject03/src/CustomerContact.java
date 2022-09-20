@@ -5,8 +5,8 @@ public class CustomerContact extends Contact {
 	private String CustomerLevel;
 	
 	// 생성자 선언
-	public CustomerContact(String name, String phoneNumber, String email, String address,
-			String birthday, String group, String customername, String customeritem, String customerlevel) {
+	public CustomerContact(String name, String phoneNumber, String email, String address, String birthday, 
+			String group, String customername, String customeritem, String customerlevel) {
 		super(name, phoneNumber, email, address, birthday, group);
 		this.CustomerName = customername;
 		this.CustomerItem = customeritem;
@@ -22,26 +22,22 @@ public class CustomerContact extends Contact {
 		System.out.println("직급 : "+ CustomerLevel);
 	}
 	
+	// 겟터 셋터
 	protected String getCustomerName() {
 		return CustomerName;
 	}
-
 	protected void setCustomerName(String customerName) {
 		CustomerName = customerName;
 	}
-
 	protected String getCustomerItem() {
 		return CustomerItem;
 	}
-
 	protected void setCustomerItem(String customerItem) {
 		CustomerItem = customerItem;
 	}
-
 	protected String getCustomerLevel() {
 		return CustomerLevel;
 	}
-
 	protected void setCustomerLevel(String customerLevel) {
 		CustomerLevel = customerLevel;
 	}
