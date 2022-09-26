@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="miniPro0919.SupersonicAirplaneEx"/>
-<fullyQualifiedTypeName name="miniPro0919.SupersonicAirplane"/>
-<fullyQualifiedTypeName name="HankookTire"/>
-<fullyQualifiedTypeName name="Vehicle.Vehicle"/>
-<fullyQualifiedTypeName name="Vehicle.Driver"/>
-<fullyQualifiedTypeName name="Vehicle.Bus"/>
-<fullyQualifiedTypeName name="Parent.Child"/>
-<fullyQualifiedTypeName name="Parent.Parent"/>
-<fullyQualifiedTypeName name="ChiniseFood.ChiniseRestaurant"/>
-<fullyQualifiedTypeName name="ChiniseFood.ChiniseRestaurantOne"/>
-<fullyQualifiedTypeName name="ChiniseFood.ChiniseRestaurnatTwo"/>
-<fullyQualifiedTypeName name="ChiniseFood.ChiniseRestaurantThree"/>
-<fullyQualifiedTypeName name="Phone.SmartPhone"/>
 <fullyQualifiedTypeName name="Animal.Animal"/>
 <fullyQualifiedTypeName name="Animal.Dog"/>
 <fullyQualifiedTypeName name="Animal.Cat"/>
@@ -28,7 +15,6 @@
 <fullyQualifiedTypeName name="RemoteControl.Audio"/>
 <fullyQualifiedTypeName name="Cafeteria.Price"/>
 <fullyQualifiedTypeName name="Cafeteria.Student1"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="Driver.Vehicle"/>
 <fullyQualifiedTypeName name="Driver.Driver"/>
 <fullyQualifiedTypeName name="Driver.Bus"/>
@@ -60,4 +46,18 @@
 <fullyQualifiedTypeName name="HomeAppliaces.HomeAppliances"/>
 <fullyQualifiedTypeName name="java.lang.invoke.SwitchPoint"/>
 <fullyQualifiedTypeName name="EngineOil.changeEngineOil"/>
+<fullyQualifiedTypeName name="NestedClass.Outter"/>
+<fullyQualifiedTypeName name="NestedClass.Outter.Nested"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="Account.Account"/>
+<fullyQualifiedTypeName name="Account.BalanceInsufficientException"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="Key.Key"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="Key.KeyExample"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="javax.imageio.stream.FileImageInputStream"/>
+<fullyQualifiedTypeName name="XXXException.XXXException"/>
 </qualifiedTypeNameHistroy>
