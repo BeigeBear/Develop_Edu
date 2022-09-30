@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="&#x09;while(true) {"/>
 			<item value="&#x09;public Course getCoruses() {"/>
 			<item value="&#x09;&#x09;"/>
 			<item value="&#x09;&#x09;&#x09;"/>

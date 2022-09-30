@@ -1,20 +1,22 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class NumberTest {
 	
 	public static void main(String[] args) {
-		InputException inputexception = new InputException();
+		InputException inputexcep = new InputException();
 		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("텍스트를 입력하세요.");
+		
 		try {
-//			System.out.println("숫자를 입력하세요.");
-//			int num = sc.nextInt();
-			inputexception.printMessage();
+			inputexcep.method(sc.nextInt());
+			
 		} catch(InputException e) {
-			String meassage = e.getMessage();
-			System.out.println(meassage);
+			e.getMessage();
+			e.printStackTrace();
 		}
 		sc.close();
 	}
-
 	
 }
