@@ -4,68 +4,79 @@ public class SmartPhone {
 	
 	Contact[] contacts;
 	int countOfContact = 0;
-	Scanner in;
+	Scanner sc;
 	
 	// 생성자
 	public SmartPhone() {
 		contacts = new Contact[10];
-		in = new Scanner(System.in);
+		sc = new Scanner(System.in);
 	}
 	
-	// 데이터 입력 확인
-	public String inputDataCheck(String type) {
-		Scanner in = new Scanner(System.in);
+	
+	
+	// 메소드 - 데이터  공백 확인
+	public String emptyCheckData(String dataType) {
+		sc = new Scanner(System.in);
 		
 		while(true) {
-			System.out.print(type+" :");
-			String data = in.nextLine();
-			if(data.isEmpty()) {
-				System.out.println("오류ㅣ다시 입력해주세요");
-				continue;
+			System.out.print(dataType+" : ");
+			String inputData = sc.nextLine();
+			
+			// 앞뒤공백제거 > 공백문자열 확인.
+			if(inputData.trim().isEmpty()) {
+				System.out.println("> 입력 오류ㅣ다시 입력해주세요");
+				continue; // 계속 입력
+			} else if(dataType.equals("전화번호")) {
+				return inputData;
 			} else {
-				System.out.println("성공ㅣ입력되었습니다.");
-				return data;
+				System.out.println("> "+dataType+"이(가) 정상 입력되었습니다.");
+				return inputData;
+			}
+		}
+	}
+	
+	// 메소드 - 데이터 중복 및 공백 확인
+	public String duplicateEmptyCheckData(String inputData) {
+		sc = new Scanner(System.in);
+		
+		for(int i=0; i<countOfContact; i++) {
+			while(contacts[i].getPhoneNumber().contentEquals(inputData)) {
+				System.out.println("> 중복 입력 오류ㅣ 다른 전화번호를 입력해주세요");
+				System.out.print("전화번호 : ");
+				String newData = sc.nextLine();
+				// 앞뒤공백제거, 공백문자열 확인.
+				if(newData.equals(inputData)) {
+					continue;
+				} else {
+					System.out.println("> 전화번호이(가) 정상 입력되었습니다.");
+					return newData;
 				}
 			}
 		}
-	
-	public String overlapPhoneNumber(String number) {
-		Scanner in = new Scanner(System.in);
-		String newNumber = null;
-		for(int i=0; i<countOfContact;i++) {
-			Contact contact = contacts[i];
-			if(contact.getPhoneNumber().equals(number)) {
-				System.out.println("오류ㅣ중복 전화번호입니다. 다시 입력해주세요");
-				newNumber = in.nextLine();
-				return newNumber;
-			}
-		}
-		return number;
+		System.out.println("> 전화번호이(가) 정상 입력되었습니다.");
+		return inputData;
 	}
-		
+
+	
 	// 최초 입력
 	public Contact inputContactData() {
-		Contact contact = null;
-		
-		String name = inputDataCheck("이름");
-		String phoneNumber = overlapPhoneNumber(inputDataCheck("전화번호"));
-		String email = inputDataCheck("이메일");
-		String address = inputDataCheck("주소");
-		String birthday = inputDataCheck("생일");
-		String group = inputDataCheck("회사");
-			
+		String name = emptyCheckData("이름");
+		String phoneNumber = duplicateEmptyCheckData(emptyCheckData("전화번호"));
+		String email = emptyCheckData("이메일");
+		String address = emptyCheckData("주소");
+		String birthday = emptyCheckData("생일");
+		String group = emptyCheckData("회사");
 		if(group.equals("회사")) {
-			String companyname = inputDataCheck("회사이름");
-			String companydepartment = inputDataCheck("부서");
-			String companylevel = inputDataCheck("직급");
+			String companyname = emptyCheckData("회사이름");
+			String companydepartment = emptyCheckData("부서");
+			String companylevel = emptyCheckData("직급");
 			return new CompanyContact(name, phoneNumber, email, address, birthday, group,
 					companyname, companydepartment, companylevel);
-			
 		} else if(group.equals("거래처")) {
 			System.out.print("거래처이름 : ");
-			String customername = inputDataCheck("거래처이름");
-			String customeritem = inputDataCheck("거래품목");
-			String customerlevel = inputDataCheck("직급");
+			String customername = emptyCheckData("거래처이름");
+			String customeritem = emptyCheckData("거래품목");
+			String customerlevel = emptyCheckData("직급");
 			return new CustomerContact(name, phoneNumber, email, address, birthday, group,
 					customername, customeritem, customerlevel);
 		}
@@ -135,10 +146,9 @@ public class SmartPhone {
 					contacts[j] = contacts[j+1];
 				}
 				countOfContact--;
+				System.out.println(">>> 삭제되었습니다.");
 				return;
 			}
-			System.out.println("삭제되었습니다.");
-			
 		}
 		System.out.println("검색 결과가 없습니다.");
 	}
@@ -148,35 +158,12 @@ public class SmartPhone {
 		for(int i=0; i<countOfContact; i++) {
 			if(contacts[i].getName().contentEquals(name)) {
 				contacts[i]=newContact;
+				System.out.println(">>> 데이터가 수정되었습니다.");
 				return;
 			}
 		}
 		System.out.println("검색결과가 없습니다.");
 	}
-	
-	// 공백 확인
-//	public void checkDataEmpty(String text) {
-//		if(text.isEmpty()) {
-//			System.out.println("오류ㅣ다시 입력해주세요");
-//			break;
-//		}
-//		
-//	}
-//	
-//	public void checkOverlap(String text) {
-//		for(int i=0; i<countOfContact;i++) {
-//			Contact contact = contacts[i];
-//		}
-//	}
-//		
-//		if(contact.getPhoneNumber().contentEquals(phoneNumber)) {
-//			System.out.println("오류ㅣ중복 전화번호입니다. 다시 입력해주세요");
-//			break;
-//		}
-	
-	
-	
-	
 }
 
 
@@ -185,7 +172,42 @@ public class SmartPhone {
 
 
 
+	// 옛 중복 데이터 메소드
+//public String overlapPhoneNumber(String number) {
+//sc = new Scanner(System.in);
+//String newNumber = null;
+//for(int i=0; i<countOfContact;i++) {
+//	Contact contact = contacts[i];
+//	if(contact.getPhoneNumber().equals(number)) {
+//		System.out.println("오류ㅣ중복 전화번호입니다. 다시 입력해주세요");
+//		newNumber = sc.nextLine();
+//		return newNumber;
+//	}
+//}
+//return number;
+//}
 
+
+
+	// 공백 확인
+//public void checkDataEmpty(String text) {
+//	if(text.isEmpty()) {
+//		System.out.println("오류ㅣ다시 입력해주세요");
+//		break;
+//	}
+//	
+//}
+//
+//public void checkOverlap(String text) {
+//	for(int i=0; i<countOfContact;i++) {
+//		Contact contact = contacts[i];
+//	}
+//}
+//	
+//	if(contact.getPhoneNumber().contentEquals(phoneNumber)) {
+//		System.out.println("오류ㅣ중복 전화번호입니다. 다시 입력해주세요");
+//		break;
+//	}
 
 
 

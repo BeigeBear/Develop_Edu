@@ -1,6 +1,5 @@
 
 public class Contact implements ShowData {
-
 	// 필드
 	private String name;
 	private String phoneNumber;
@@ -30,7 +29,7 @@ public class Contact implements ShowData {
 		System.out.println("그룹 : "+ group);
 	}
 	
-	// 갯터/셋터
+	// Get Set
 	protected String getName() {
 		return name;
 	}
@@ -75,18 +74,3 @@ public class Contact implements ShowData {
 		System.out.println("전화번호 : "+ phoneNumber);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

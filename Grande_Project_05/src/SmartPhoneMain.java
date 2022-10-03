@@ -14,41 +14,41 @@ public class SmartPhoneMain {
 	}
 	
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		SmartPhone smartphone = new SmartPhone();
 
-//		System.out.println("데이터 2개를 입력합니다.");
-//		for(int i=0; i<2; i++) {
-//			smartphone.addContact(smartphone.inputContactData());
-//		}
+		System.out.println("데이터 2개를 입력합니다.");
+		for(int i=0; i<2; i++) {
+			smartphone.addContact(smartphone.inputContactData());
+		}
 		
 		while(true) {
 			printMenu();
-			String choiceMenu = scanner.nextLine();
+			String choiceMenu = sc.nextLine();
 			
 			// 연락처 입력 선택
 			if(choiceMenu.equals("1")) {
 				System.out.println(">> 등록 <<");
 				System.out.println("등록할 연락처의 그룹의 번호를 입력하세요.");
 				System.out.println(">> 1. 회사\n>> 2. 거래처");
-				String choiceGroup = scanner.nextLine();
+				String choiceGroup = sc.nextLine();
 				if(choiceGroup.equals("1") || choiceGroup.equals("2")) {
 					smartphone.addContact(smartphone.inputContactData());
 				} else {
-					System.out.println("오류ㅣ잘못 입력하셨습니다\n");
+					System.out.println("입력 오류ㅣ잘못 입력하셨습니다\n");
 				}
 				
 			// 연락처 검색
 			} else if(choiceMenu.equals("2")) {
 				System.out.println(">> 검색 <<");
 				System.out.println("검색할 연락처의 이름을 입력하세요");
-				smartphone.searchContact(scanner.nextLine());
+				smartphone.searchContact(sc.nextLine());
 			
 			// 연락처 수정
 			} else if(choiceMenu.equals("3")) {
 				System.out.println(">> 수정 <<");
 				System.out.println("수정할 연락처의 이름을 입력하세요");
-				String name = scanner.nextLine();
+				String name = sc.nextLine();
 				System.out.println("데이터를 새로 입력해주세요");
 				smartphone.editContact(name, smartphone.inputContactData());	
 			
@@ -56,7 +56,7 @@ public class SmartPhoneMain {
 			} else if(choiceMenu.equals("4")) {
 				System.out.println(">> 삭제 <<");
 				System.out.println("삭제할 연락처의 이름을 입력하세요");
-				smartphone.deleteContact(scanner.nextLine());	
+				smartphone.deleteContact(sc.nextLine());	
 			
 			// 연락처 전체 리스트 보기
 			} else if(choiceMenu.equals("5")) {
@@ -74,6 +74,4 @@ public class SmartPhoneMain {
 			}
 		}
 	}
-
-	
 }
