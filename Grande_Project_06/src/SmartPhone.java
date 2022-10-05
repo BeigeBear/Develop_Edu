@@ -1,9 +1,3 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class SmartPhone {
@@ -11,7 +5,6 @@ public class SmartPhone {
 	Contact[] contacts;
 	int countOfContact = 0;
 	Scanner sc;
-	ArrayList<String> arrayList;
 	
 	// 생성자
 	public SmartPhone() {
@@ -180,70 +173,7 @@ public class SmartPhone {
 		}
 		System.out.println("검색결과가 없습니다.");
 	}
-	
-	// 연락처 파일 입력
-//	public void loadFile() throws Exception {
-//	}
-	
-	// 연락처 파일 출력
-	public void saveFile() throws Exception {
-		File contactdir = new File("C:/Temp/Contact");
-		File file = new File("C:/Temp/Contact/ContactInfo.txt");
-		
-		if(contactdir.exists() == false) { contactdir.mkdirs(); }
-		if(file.exists() == false) { file.createNewFile(); };
-		
-		
-		
-		
-		for(int i=0; i<countOfContact; i++) {
-			Contact contact = contacts[i];
-			
-			FileWriter fw = new FileWriter(file);
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			fw.write(contact.getName());
-			fw.write(contact.getPhoneNumber());
-			fw.write(contact.getName());
-			fw.write(contact.getName());
-			
-			Contact data = null;
-			
-			
-			for(Contact datainfo : data) {
-				System.out.println(datainfo.getName());
-			}
-		
-			
-			fw.write(contact.getName());
-		
-			fw.flush();
-			fw.close();
-		}
-		
-		System.out.println(countOfContact+"개의 연락처가 출력되었습니다.");
-
-		
-
-	}
-	
-	
 }
-
 
 
 

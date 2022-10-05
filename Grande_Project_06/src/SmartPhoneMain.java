@@ -9,13 +9,11 @@ public class SmartPhoneMain {
 		System.out.println(">> 3. 연락처 수정");
 		System.out.println(">> 4. 연락처 삭제");
 		System.out.println(">> 5. 연락처 전체 리스트 보기");
-		System.out.println(">> 6. 연락처 파일 출력");
-		System.out.println(">> 7. 연락처 파일 입력");
-		System.out.println(">> 8. 종료");
+		System.out.println(">> 6. 종료");
 		System.out.println("======================================");
 	}
 	
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		SmartPhone smartphone = new SmartPhone();
 
@@ -64,16 +62,8 @@ public class SmartPhoneMain {
 				System.out.println(">> 전체 연락처 <<");
 				smartphone.printAllContact();
 
-			// 연락처 파일 출력
-			} else if(choiceMenu.equals("6")) {
-				smartphone.saveFile();
-				
-			// 연락처 전체 리스트 보기
-			} else if(choiceMenu.equals("7")) {
-				smartphone.loadFile();
-				
 			// 종료
-			} else if(choiceMenu.equals("8")) {
+			} else if(choiceMenu.equals("6")) {
 				System.out.println("프로그램을 종료합니다.");
 				return;
 			
