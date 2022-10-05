@@ -1,5 +1,6 @@
+import java.io.Serializable;
 
-public class Contact implements ShowData {
+public class Contact implements ShowData, Serializable {
 	// 필드
 	private String name;
 	private String phoneNumber;

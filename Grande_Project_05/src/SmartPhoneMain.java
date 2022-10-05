@@ -19,10 +19,10 @@ public class SmartPhoneMain {
 		Scanner sc = new Scanner(System.in);
 		SmartPhone smartphone = new SmartPhone();
 
-		System.out.println("데이터 1개를 입력합니다.");
-		for(int i=0; i<1; i++) {
-			smartphone.addContact(smartphone.inputContactData());
-		}
+//		System.out.println("데이터 3개를 입력합니다.");
+//		for(int i=0; i<3; i++) {
+//			smartphone.addContact(smartphone.inputContactData());
+//		}
 		while(true) {
 			printMenu();
 			String choiceMenu = sc.nextLine();
@@ -68,7 +68,7 @@ public class SmartPhoneMain {
 			} else if(choiceMenu.equals("6")) {
 				smartphone.saveFile();
 				
-			// 연락처 전체 리스트 보기
+			// 연락처 파일 입력 
 			} else if(choiceMenu.equals("7")) {
 				smartphone.loadFile();
 				

@@ -1,17 +1,22 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.lang.reflect.Array;
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
-public class SmartPhone {
+public class SmartPhone implements Serializable {
 	
-	Contact[] contacts;
 	int countOfContact = 0;
+	String folderLocation = "C:/Temp/Contact";
+	String fileLocation = "C:/Temp/Contact/ContactInfo.txt";
 	Scanner sc;
-	ArrayList<String> arrayList;
+	Contact[] contacts;
+	ArrayList<Contact> arrayList;
 	
 	// 생성자
 	public SmartPhone() {
@@ -182,67 +187,114 @@ public class SmartPhone {
 	}
 	
 	// 연락처 파일 입력
-//	public void loadFile() throws Exception {
-//	}
+	@SuppressWarnings("unchecked")
+	public void loadFile() throws Exception {
+		FileInputStream fis = new FileInputStream(fileLocation);
+		BufferedInputStream bis = new BufferedInputStream(fis);
+		ObjectInputStream ois = new ObjectInputStream(bis);
+		
+		arrayList = (ArrayList<Contact>) ois.readObject();
+		
+		for(int i=0; i<arrayList.size(); i++) {
+			Contact contact = arrayList.get(i);
+			if(contact instanceof CompanyContact) {
+				contacts[i] = (CompanyContact)contact;
+			} else if(contact instanceof CustomerContact) {
+				contacts[i] = (CustomerContact)contact;
+			} else {
+				contacts[i] = contact;
+			}
+			System.out.println(i+"번 연락처가 시스템에 입력되었습니다.");
+		}
+		System.out.println(">>> "+arrayList.size()+"개의 연락처가 시스템에 입력되었습니다.");
+		ois.close();
+		bis.close();
+		fis.close();
+	}
 	
 	// 연락처 파일 출력
 	public void saveFile() throws Exception {
-		File contactdir = new File("C:/Temp/Contact");
-		File file = new File("C:/Temp/Contact/ContactInfo.txt");
-		
+		// 폴더 및 파일 생성
+		File contactdir = new File(folderLocation);
+		File file = new File(fileLocation);
+		// 생성 전 확인
 		if(contactdir.exists() == false) { contactdir.mkdirs(); }
 		if(file.exists() == false) { file.createNewFile(); };
 		
-		
-		
+		FileOutputStream fos = new FileOutputStream(file);
+		BufferedOutputStream bos = new BufferedOutputStream(fos);
+		ObjectOutputStream oos = new ObjectOutputStream(bos);
+		arrayList = new ArrayList<Contact>();
 		
 		for(int i=0; i<countOfContact; i++) {
 			Contact contact = contacts[i];
-			
-			FileWriter fw = new FileWriter(file);
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			fw.write(contact.getName());
-			fw.write(contact.getPhoneNumber());
-			fw.write(contact.getName());
-			fw.write(contact.getName());
-			
-			Contact data = null;
-			
-			
-			for(Contact datainfo : data) {
-				System.out.println(datainfo.getName());
-			}
-		
-			
-			fw.write(contact.getName());
-		
-			fw.flush();
-			fw.close();
+			if(contact instanceof CompanyContact) {
+				arrayList.add((CompanyContact)contact);
+			} else if(contact instanceof CustomerContact) {
+				arrayList.add((CustomerContact)contact);
+			} else 
+				arrayList.add(contact);
+			System.out.println(i+"번 연락처가 파일에 저장되었습니다.");
 		}
-		
-		System.out.println(countOfContact+"개의 연락처가 출력되었습니다.");
+		oos.writeObject(arrayList);
+		System.out.println(">>> "+arrayList.size()+"개의 연락처가 파일에 저장되었습니다.");
 
-		
-
+		oos.close();
+		bos.close();
+		fos.close();
 	}
+
+	
+	
+	
+	
 	
 	
 }
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+//		for(int i=0; i<countOfContact; i++) {
+//			Contact contact = contacts[i];
+//			
+//			FileWriter fw = new FileWriter(file);
+			
+//			fw.write(contact.getName());
+//			fw.write(contact.getPhoneNumber());
+//			fw.write(contact.getName());
+//			fw.write(contact.getName());
+			
+//			Contact data = null;
+//			
+//			
+//			for(Contact datainfo : data) {
+//				System.out.println(datainfo.getName());
+//			}
+//		
+//			
+//			fw.write(contact.getName());
+//		
+//			fw.flush();
+//			fw.close();
+//		}
+		
+		
+
+		
 
 
 
