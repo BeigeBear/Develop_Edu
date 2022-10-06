@@ -64,7 +64,7 @@ public class SmartPhoneMain {
 				System.out.println(">> 전체 연락처 <<");
 				smartphone.printAllContact();
 
-			// 연락처 파일 출력
+			// 연락처 전체 파일 출력
 			} else if(choiceMenu.equals("6")) {
 				smartphone.saveFile();
 				
