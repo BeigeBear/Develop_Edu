@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
-<fullyQualifiedTypeName name="java.io.BufferedOutputStream"/>
-<fullyQualifiedTypeName name="java.io.FileInputStream"/>
-<fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
-<fullyQualifiedTypeName name="CompanyContact"/>
-<fullyQualifiedTypeName name="CustomerContact"/>
-<fullyQualifiedTypeName name="java.sql.Array"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="java.io.DataInputStream"/>
 <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.net.DatagramSocket"/>
 <fullyQualifiedTypeName name="java.net.DatagramPacket"/>
@@ -60,4 +51,13 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="retest.divide"/>
 <fullyQualifiedTypeName name="Animal.Animal"/>
+<fullyQualifiedTypeName name="H294_People"/>
+<fullyQualifiedTypeName name="H294_StudentExample"/>
+<fullyQualifiedTypeName name="H294_Student"/>
+<fullyQualifiedTypeName name="P296_Calculator.Calculator"/>
+<fullyQualifiedTypeName name="P296_Calculator.Computer"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.lang.Package"/>
+<fullyQualifiedTypeName name="P310_Parent.Parent"/>
+<fullyQualifiedTypeName name="P310_Parent.Child"/>
 </qualifiedTypeNameHistroy>

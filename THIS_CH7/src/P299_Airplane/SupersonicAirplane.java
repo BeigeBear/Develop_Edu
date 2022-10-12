@@ -1,4 +1,4 @@
-package miniPro0919;
+package P299_Airplane;
 
 public class SupersonicAirplane extends Airplane {
 	public static final int NORMAL = 1;
@@ -11,6 +11,7 @@ public class SupersonicAirplane extends Airplane {
 		if(flyMode == SUPERSONIC) {
 			System.out.println("초음속비행합니다.");
 		} else {
+			// Airplane(부모클래스) 객체의 fly()메소드 호출
 			super.fly();
 		}
 	}

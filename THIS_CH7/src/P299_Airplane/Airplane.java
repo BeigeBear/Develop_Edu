@@ -1,4 +1,4 @@
-package miniPro0919;
+package P299_Airplane;
 
 public class Airplane {
 	public void land() {
