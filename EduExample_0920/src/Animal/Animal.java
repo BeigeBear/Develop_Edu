@@ -1,6 +1,8 @@
 package Animal;
 
 public abstract class Animal {
+	String animal = "동물";
+	
 	public String kind;
 	
 	public void breathe() {

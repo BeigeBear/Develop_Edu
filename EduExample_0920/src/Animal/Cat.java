@@ -1,6 +1,8 @@
 package Animal;
 
 public class Cat extends Animal {
+	String animal = "고양이";
+	
 	public Cat() {
 		this.kind = "포유류";
 	}
