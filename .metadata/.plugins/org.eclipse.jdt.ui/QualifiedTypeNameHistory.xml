@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< Updated upstream
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="java.io.DataInputStream"/>
@@ -61,3 +62,6 @@
 <fullyQualifiedTypeName name="P310_Parent.Parent"/>
 <fullyQualifiedTypeName name="P310_Parent.Child"/>
 </qualifiedTypeNameHistroy>
+=======
+<qualifiedTypeNameHistroy/>
+>>>>>>> Stashed changes

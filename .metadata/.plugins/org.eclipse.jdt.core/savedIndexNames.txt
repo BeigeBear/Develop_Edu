@@ -3,8 +3,22 @@ INDEX VERSION 1.131+C:\Users\cameo\Documents\GitHub\Java_Education\.metadata\.pl
 465133146.index
 2345227423.index
 944321656.index
+<<<<<<< Updated upstream
+=======
+1551969265.index
+1039306593.index
+3143534195.index
+624563152.index
+3843610040.index
+1558621044.index
+398925468.index
+2904636744.index
+1778335510.index
+3516203853.index
+>>>>>>> Stashed changes
 3219831638.index
 3231595483.index
+<<<<<<< Updated upstream
 2788008411.index
 1091930720.index
 633849297.index
@@ -14,6 +28,21 @@ INDEX VERSION 1.131+C:\Users\cameo\Documents\GitHub\Java_Education\.metadata\.pl
 1134705114.index
 3428431589.index
 2913753334.index
+=======
+2081522690.index
+677718188.index
+1493700793.index
+626612610.index
+465133146.index
+460187341.index
+2668381953.index
+847978539.index
+2009856183.index
+2386850106.index
+2513093821.index
+4184561138.index
+3338724674.index
+>>>>>>> Stashed changes
 1511781462.index
 2423510448.index
 2081522690.index
@@ -25,11 +54,39 @@ INDEX VERSION 1.131+C:\Users\cameo\Documents\GitHub\Java_Education\.metadata\.pl
 772743215.index
 624563152.index
 3409212156.index
+<<<<<<< Updated upstream
 2009856183.index
 1493700793.index
 3157475946.index
 4009558967.index
 1778335510.index
+=======
+1134705114.index
+1630579643.index
+127134472.index
+468107086.index
+401596364.index
+2345227423.index
+2574794399.index
+3200703938.index
+2423510448.index
+356327.index
+2816634253.index
+3428431589.index
+633849297.index
+3543096024.index
+4159592826.index
+1091930720.index
+3221307651.index
+2913753334.index
+3528238001.index
+223881628.index
+3275792949.index
+453955381.index
+3070652821.index
+2272378639.index
+1379738438.index
+>>>>>>> Stashed changes
 1008804497.index
 3338724674.index
 1379738438.index
