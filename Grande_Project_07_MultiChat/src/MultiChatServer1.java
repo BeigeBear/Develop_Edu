@@ -91,19 +91,6 @@ public class MultiChatServer1 {
 			
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 		}
 	}
 }
