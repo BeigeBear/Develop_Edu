@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\ECLIPSE\Java_Education"/>
 		<item value="C:\Users\admin\Documents\GitHub\JavaDevEducation"/>
 		<item value="C:\Users\cameo\Documents\GitHub\Java_Education"/>
 	</list>
@@ -39,6 +40,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\CAMEO_CODE\Java_Education"/>
 			<item value="C:\Users\admin\Documents\GitHub\JavaDevEducation"/>
 			<item value="C:\Users\cameo\Documents\GitHub\Java_Education"/>
 		</list>
