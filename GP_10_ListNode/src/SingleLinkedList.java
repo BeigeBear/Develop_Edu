@@ -27,9 +27,9 @@ public class SingleLinkedList {
       L.printList();
 
      
-      System.out.println("(4) 리스트의 마지막 노드 삭제하기");
-      L.deleteLastNode();
-      L.printList();
+//      System.out.println("(4) 리스트의 마지막 노드 삭제하기");
+//      L.deleteLastNode();
+//      L.printList();
    }
    
    

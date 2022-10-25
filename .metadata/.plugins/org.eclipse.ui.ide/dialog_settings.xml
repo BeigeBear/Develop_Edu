@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\ECLIPSE\CAMEO\Java_Edu"/>
 		<item value="C:\Users\cameo\Documents\01_Development\GitHub\Java_Edu"/>
 		<item value="C:\ECLIPSE\Java_Education"/>
 		<item value="C:\Users\admin\Documents\GitHub\JavaDevEducation"/>

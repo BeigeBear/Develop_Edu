@@ -69,19 +69,20 @@ public class LinkedList {
 		ListNode preNode = null;
 		
 		// 헤드가 비어있지 않을 때
-		if(nextNode != null) {
-			while(nextNode != null) {
-				preNode = currentNode;				// 지금꺼를 
-				currentNode = nextNode;
-				currentNode.link = preNode;
-				
-				nextNode = nextNode.link;
-			}
+		while(nextNode != null) {
+			// 현재 노드를 이전 노드로 넘김
+			preNode = currentNode;
 			
-			// 다음 노드가 없을 때
-			
+			// 불러온 다음 노드를 현재 노드로 불러옴
 			currentNode = nextNode;
-		}
+			
+			// 현재 노드와 다음 
+			preNode = currentNode.link;
+			
+			nextNode = nextNode.link;
+
+			}
+
 		head = currentNode;
 		}
 
