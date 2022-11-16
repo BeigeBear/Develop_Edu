@@ -1,6 +1,7 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
 >>>>>>>=Stashed changes
+Refactoring.savealleditors=true
 breadcrumb.org.eclipse.jdt.ui.JavaPerspective=true
 content_assist_autoactivation_triggers_java=qwertyuiopasdfghjklzxcvbnm,.QWERTYUIOPASDFGHJKLZXCVBNM
 content_assist_disable_completion_trigger_chars=true
