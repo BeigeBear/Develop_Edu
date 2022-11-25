@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="request"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="request"/>
+			<item value="EUC-KR"/>
+			<item value="    pageEncoding=&quot;EUC-KR&quot;%&gt;"/>
+			<item value="ECU-KR"/>
+			<item value="&lt;%@ page language=&quot;java&quot; contentType=&quot;text/html; charset=EUC-KR&quot;"/>
 			<item value="&#x09;double areaCircle(double r) {"/>
 			<item value="} // if"/>
 			<item value="&#x09;while(true) {"/>
@@ -17,6 +22,7 @@
 			<item value=""/>
 		</list>
 		<list key="replacehistory">
+			<item value="UTF-8"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
@@ -26,8 +32,15 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="144"/>
 		<item key="DIALOG_Y_ORIGIN" value="8"/>
-		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_WIDTH" value="288"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.jst.jsp.ui.internal.preferences.ui.JSPTemplatePreferencePage$JSPEditTemplateDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="662"/>
+		<item key="DIALOG_Y_ORIGIN" value="238"/>
+		<item key="DIALOG_WIDTH" value="886"/>
+		<item key="DIALOG_HEIGHT" value="629"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|맑은 고딕"/>
 	</section>
 </section>
